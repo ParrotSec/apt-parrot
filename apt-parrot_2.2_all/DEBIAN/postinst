@@ -1,0 +1,56 @@
+#!/bin/bash
+set -e
+
+
+#update xapian index
+
+if [ -x "/usr/sbin/update-xapian-index" ]
+then
+	update-apt-xapian-index -vf
+fi
+
+
+
+#install parrot repositories if missing
+
+if ! [ -e "/etc/apr/sources.list.d/debian.list" ] && ! [ -e "/etc/apr/sources.list.d/parrot.list" ]
+then
+	parrot-mirror-selector eu
+fi
+
+
+
+
+#do not install jessie repositories if the system
+#is a legacy wheezy-based version of parrot
+
+
+if (( $(grep -c " 1.9" /etc/lsb-release) == 0 ))
+then
+	parrot-mirror-selector wheezy
+fi
+
+if (( $(grep -c " 1.8" /etc/lsb-release) == 0 ))
+then
+	parrot-mirror-selector wheezy
+fi
+
+if (( $(grep -c " 1.7" /etc/lsb-release) == 0 ))
+then
+	parrot-mirror-selector wheezy
+fi
+
+if (( $(grep -c " 1.6" /etc/lsb-release) == 0 ))
+then
+	parrot-mirror-selector wheezy
+fi
+
+if (( $(grep -c " 1.5" /etc/lsb-release) == 0 ))
+then
+	parrot-mirror-selector wheezy
+fi
+
+if (( $(grep -c " 1.4" /etc/lsb-release) == 0 ))
+then
+	parrot-mirror-selector wheezy
+fi

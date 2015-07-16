@@ -1,0 +1,128 @@
+#!/bin/bash
+
+function list() {
+	echo -e "Parrot Mirror Selector - set up the APT mirror you desire
+		
+MIRRORS LIST <codename>  - <description> ([<debian archive> +] <parrot archive>)	
+	BY ZONE
+		us   - north america (debian us mirror + frozenbox us mirror)
+		eu   - europe (GARR)
+		asia - asia (YANDEX)
+		sa   - south america (debian us mirror + CEDIA)
+
+	BY PROVIDER
+		frozenbox - north america
+		garr      - italy
+		yandex    - russia
+		cedia     - ecuador
+		uta       - ecuador
+		espoch    - ecuador
+
+USAGE
+  parrot-mirror-selector <mirror codename>
+EXAMPLE
+  parrot-mirror-selector garr
+"
+}
+
+
+
+
+function wheezy() {
+	cat /etc/apt/templates/wheezy/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/wheezy/parrot.list > /etc/apt/sources.list.d/parrot.list
+
+
+
+
+function eu() {
+	cat /etc/apt/templates/eu/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/eu/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function us() {
+	cat /etc/apt/templates/us/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/us/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function asia() {
+	cat /etc/apt/templates/asia/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/asia/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function sa() {
+	cat /etc/apt/templates/sa/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/sa/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function cedia() {
+	cat /etc/apt/templates/cedia/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/cedia/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function uta() {
+	cat /etc/apt/templates/uta/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/uta/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function espoch() {
+	cat /etc/apt/templates/espoch/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/espoch/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function frozenbox() {
+	cat /etc/apt/templates/frozenbox/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/frozenbox/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function garr() {
+	cat /etc/apt/templates/garr/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/garr/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function yandex() {
+	cat /etc/apt/templates/yandex/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/yandex/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+case $1 in
+	list)
+		list
+	;;
+	eu)
+		eu
+	;;
+	us)
+		us
+	;;
+	asia)
+		asia
+	;;
+	sa)
+		sa
+	;;
+	yandex)
+		yandex
+	;;
+	garr)
+		garr
+	;;
+	frozenbox)
+		frozenbox
+	;;
+	cedia)
+		cedia
+	;;
+	uta)
+		uta
+	;;
+	espoch)
+		espoch
+	;;
+	wheezy)
+		espoch
+	;;
+	*)
+		list
+	;;
+esac
