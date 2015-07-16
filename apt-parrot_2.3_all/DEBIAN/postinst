@@ -13,7 +13,7 @@ fi
 
 #install parrot repositories if missing
 
-if ! [ -e "/etc/apr/sources.list.d/debian.list" ] && ! [ -e "/etc/apr/sources.list.d/parrot.list" ]
+if ! [ -e "/etc/apt/sources.list.d/debian.list" ] && ! [ -e "/etc/apt/sources.list.d/parrot.list" ]
 then
 	parrot-mirror-selector eu
 fi

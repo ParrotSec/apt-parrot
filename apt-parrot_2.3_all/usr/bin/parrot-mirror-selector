@@ -31,7 +31,7 @@ EXAMPLE
 function wheezy() {
 	cat /etc/apt/templates/wheezy/debian.list > /etc/apt/sources.list.d/debian.list
 	cat /etc/apt/templates/wheezy/parrot.list > /etc/apt/sources.list.d/parrot.list
-
+}
 
 
 
@@ -120,7 +120,7 @@ case $1 in
 		espoch
 	;;
 	wheezy)
-		espoch
+		wheezy
 	;;
 	*)
 		list
