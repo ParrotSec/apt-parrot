@@ -1,4 +1,0 @@
-deb http://garr.repository.frozenbox.org/mirrors/parrot stable main contrib non-free
-#deb-src http://garr.repository.frozenbox.org/mirrors/parrot stable main contrib non-free
-#deb http://garr.repository.frozenbox.org/mirrors/parrot testing main contrib non-free
-

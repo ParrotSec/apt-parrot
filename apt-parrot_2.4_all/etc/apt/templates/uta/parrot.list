@@ -1,0 +1,3 @@
+deb http://uta.archive.parrotsec.org/parrot stable main contrib non-free
+#deb-src http://uta.archive.parrotsec.org/parrot stable main contrib non-free
+#deb http://uta.archive.parrotsec.org/parrot testing main contrib non-free

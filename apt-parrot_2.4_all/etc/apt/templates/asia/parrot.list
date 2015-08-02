@@ -1,0 +1,3 @@
+deb http://asia.archive.parrotsec.org/mirrors/parrot stable main contrib non-free
+#deb-src http://asia.archive.parrotsec.org/mirrors/parrot stable main contrib non-free
+#deb http://asia.archive.parrotsec.org/mirrors/parrot testing main contrib non-free

@@ -1,0 +1,3 @@
+deb http://cedia.archive.parrotsec.org/parrot stable main contrib non-free
+#deb-src http://cedia.archive.parrotsec.org/parrot stable main contrib non-free
+#deb http://cedia.archive.parrotsec.org/parrot testing main contrib non-free

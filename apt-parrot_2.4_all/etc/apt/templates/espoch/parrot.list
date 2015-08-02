@@ -1,0 +1,3 @@
+deb http://espoch.archive.parrotsec.org/parrot stable main contrib non-free
+#deb-src http://espoch.archive.parrotsec.org/parrot stable main contrib non-free
+#deb http://espoch.archive.parrotsec.org/parrot testing main contrib non-free
