@@ -29,4 +29,4 @@ d4b674554390fe1eb1a309d0a268042c  etc/apt/templates/uta/debian.list
 d42a6cd39055ef2b200d61cc601032d7  etc/apt/templates/asia/parrot.list
 b606c6ad8e9ccc1d84653ba40a8a2dfd  etc/apt/templates/frozenbox/debian.list
 f66e9530586fde867d437fc0323e0aa3  etc/apt/templates/frozenbox/parrot.list
-a992c35d75099c0f7ee1deb974b2a50b  usr/bin/parrot-mirror-selector
+1c16a2e703a962ffefebdcfc86360a0c  usr/bin/parrot-mirror-selector
