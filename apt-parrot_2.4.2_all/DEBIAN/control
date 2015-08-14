@@ -1,8 +1,8 @@
 Package: apt-parrot
-Version: 2.4.1
+Version: 2.4.2
 Architecture: all
 Maintainer: Lorenzo EclipseSpark Faletra <eclipse@frozenbox.org>
-Installed-Size: 108
+Installed-Size: 114
 Depends: apt
 Pre-Depends: parrot-archive-keyring
 Recommends: parrot-core, python-apt-common (>= 0.8.8.2-parrot0), apt-xapian-index
