@@ -1,4 +1,3 @@
-6448e4722401e6821558ff9ad309782a  etc/apt/sources.list.parrot
 c84a77dc7f0ce82675e1357aa9730e0d  etc/apt/templates/eu2/debian.list
 c011a24f4aeeeee7b280de242b0d3dbf  etc/apt/templates/eu2/parrot.list
 d4b674554390fe1eb1a309d0a268042c  etc/apt/templates/sa/debian.list
@@ -17,16 +16,19 @@ ff07fea18254f870e6f736587d0f577c  etc/apt/templates/wheezy/parrot.list
 57f368388a2d237597af9a642ae63748  etc/apt/templates/garr/parrot.list
 c84a77dc7f0ce82675e1357aa9730e0d  etc/apt/templates/eu3/debian.list
 68b287529cffe18d3b9d48c0bb734cc7  etc/apt/templates/eu3/parrot.list
+b606c6ad8e9ccc1d84653ba40a8a2dfd  etc/apt/templates/us4/debian.list
+1bd87d47fc7113808d112024833c8bbc  etc/apt/templates/us4/parrot.list
 d4b674554390fe1eb1a309d0a268042c  etc/apt/templates/cedia/debian.list
 5c96a23159a201b990571ab0c973a0ee  etc/apt/templates/cedia/parrot.list
 b606c6ad8e9ccc1d84653ba40a8a2dfd  etc/apt/templates/us2/debian.list
 9aa340530400fbbed74c16540f90b363  etc/apt/templates/us2/parrot.list
 b606c6ad8e9ccc1d84653ba40a8a2dfd  etc/apt/templates/us/debian.list
-d831030de7a41c382d8f23dfb586c6bc  etc/apt/templates/us/parrot.list
+52eacae657ed972db061916660ae984d  etc/apt/templates/us/parrot.list
 d4b674554390fe1eb1a309d0a268042c  etc/apt/templates/uta/debian.list
 4db8dbc483bfdf23245f8ea9cae7d10e  etc/apt/templates/uta/parrot.list
 15c7726745120ddb2485b47f80d84c87  etc/apt/templates/asia/debian.list
 d42a6cd39055ef2b200d61cc601032d7  etc/apt/templates/asia/parrot.list
 b606c6ad8e9ccc1d84653ba40a8a2dfd  etc/apt/templates/frozenbox/debian.list
 f66e9530586fde867d437fc0323e0aa3  etc/apt/templates/frozenbox/parrot.list
+6448e4722401e6821558ff9ad309782a  etc/apt/sources.list.default
 1c16a2e703a962ffefebdcfc86360a0c  usr/bin/parrot-mirror-selector

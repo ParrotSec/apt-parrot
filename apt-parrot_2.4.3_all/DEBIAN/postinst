@@ -18,6 +18,10 @@ then
 	parrot-mirror-selector eu
 fi
 
+if ! [ -e "/etc/apt/sources.list.default" ]
+then
+	cp /etc/apt/sources.list.default /etc/apt/sources.list
+fi
 
 
 
@@ -25,32 +29,32 @@ fi
 #is a legacy wheezy-based version of parrot
 
 
-if (( $(grep -c " 1.9" /etc/lsb-release) == 0 ))
+if (( $(grep -c " 1.9" /etc/lsb-release) != 0 ))
 then
 	parrot-mirror-selector wheezy
 fi
 
-if (( $(grep -c " 1.8" /etc/lsb-release) == 0 ))
+if (( $(grep -c " 1.8" /etc/lsb-release) != 0 ))
 then
 	parrot-mirror-selector wheezy
 fi
 
-if (( $(grep -c " 1.7" /etc/lsb-release) == 0 ))
+if (( $(grep -c " 1.7" /etc/lsb-release) != 0 ))
 then
 	parrot-mirror-selector wheezy
 fi
 
-if (( $(grep -c " 1.6" /etc/lsb-release) == 0 ))
+if (( $(grep -c " 1.6" /etc/lsb-release) != 0 ))
 then
 	parrot-mirror-selector wheezy
 fi
 
-if (( $(grep -c " 1.5" /etc/lsb-release) == 0 ))
+if (( $(grep -c " 1.5" /etc/lsb-release) != 0 ))
 then
 	parrot-mirror-selector wheezy
 fi
 
-if (( $(grep -c " 1.4" /etc/lsb-release) == 0 ))
+if (( $(grep -c " 1.4" /etc/lsb-release) != 0 ))
 then
 	parrot-mirror-selector wheezy
 fi
