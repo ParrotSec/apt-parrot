@@ -5,12 +5,13 @@ function list() {
 		
 MIRRORS LIST <codename>  - <description> ([<debian archive> +] <parrot archive>)	
 	BY ZONE
-		us   - north america (debian us mirror + frozenbox server4 mirror)
-		us2  - north america (debian us mirror + frozenbox server0 mirror)
+		us   - north america (LUG MTU)
+		us2  - north america (debian us mirror + frozenbox server4 mirror)
 		us3  - north america (debian us mirror + frozenbox server7 mirror)
+		us4  - north america (debian us mirror + frozenbox server0 mirror)
 		eu   - europe (GARR)
 		eu2  - europe (debian GARR + central archive)
-		eu3  - europe (debian GARR + parrot cloudflare mirror)
+		eu3  - europe (debian GARR + mirror offered by feliwyn.fr)
 		asia - asia (YANDEX)
 		sa   - south america (debian brasilian mirror + parrot CEDIA)
 		sa2  - south america (debian brasilian mirror + parrot ESPOCH)
@@ -20,6 +21,8 @@ MIRRORS LIST <codename>  - <description> ([<debian archive> +] <parrot archive>)
 		frozenbox  - central mirror
 		cloudflare - worldwide CDN
 		garr       - italy
+		felywin    - france
+		mtu        - USA
 		yandex     - russia
 		cedia      - ecuador
 		uta        - ecuador
@@ -57,9 +60,9 @@ function eu3() {
 	cat /etc/apt/templates/eu3/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
-function cloudflare() {
-	cat /etc/apt/templates/eu3/debian.list > /etc/apt/sources.list.d/debian.list
-	cat /etc/apt/templates/eu3/parrot.list > /etc/apt/sources.list.d/parrot.list
+function eu4() {
+	cat /etc/apt/templates/eu4/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/eu4/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 function us() {
@@ -75,6 +78,11 @@ function us2() {
 function us3() {
 	cat /etc/apt/templates/us3/debian.list > /etc/apt/sources.list.d/debian.list
 	cat /etc/apt/templates/us3/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function us4() {
+	cat /etc/apt/templates/us4/debian.list > /etc/apt/sources.list.d/debian.list
+	cat /etc/apt/templates/us4/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 function asia() {
@@ -140,6 +148,9 @@ case $1 in
 	eu3)
 		eu3
 	;;
+	eu4)
+		eu4
+	;;
 	us)
 		us
 	;;
@@ -148,6 +159,9 @@ case $1 in
 	;;
 	us3)
 		us3
+	;;
+	us4)
+		us4
 	;;
 	asia)
 		asia
@@ -171,7 +185,7 @@ case $1 in
 		frozenbox
 	;;
 	cloudflare)
-		cloudflare
+		eu4
 	;;
 	cedia)
 		cedia
@@ -181,6 +195,12 @@ case $1 in
 	;;
 	espoch)
 		espoch
+	;;
+	mtu)
+		us
+	;;
+	felywin)
+		felywin
 	;;
 	wheezy)
 		wheezy
