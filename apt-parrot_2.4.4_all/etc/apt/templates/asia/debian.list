@@ -1,0 +1,14 @@
+deb http://asia.archive.parrotsec/debian jessie main contrib non-free
+#deb-src http://asia.archive.parrotsec/debian jessie main contrib non-free
+
+deb http://asia.archive.parrotsec/debian jessie-backports main contrib non-free
+#deb-src http://asia.archive.parrotsec/debian jessie-backports main contrib non-free
+
+deb http://security.debian.org/ jessie/updates main
+#deb-src http://security.debian.org/ jessie/updates main
+
+deb http://asia.archive.parrotsec/debian jessie-updates main contrib non-free
+#deb-src http://asia.archive.parrotsec/debian jessie-updates main contrib non-free
+
+#deb http://asia.archive.parrotsec/debian jessie-proposed-updates main contrib non-free
+#deb-src http://asia.archive.parrotsec/debian jessie-updates main contrib non-free
