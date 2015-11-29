@@ -15,7 +15,7 @@ fi
 
 if ! [ -e "/etc/apt/sources.list.d/debian.list" ] && ! [ -e "/etc/apt/sources.list.d/parrot.list" ]
 then
-	parrot-mirror-selector eu
+	parrot-mirror-selector us
 fi
 
 if ! [ -e "/etc/apt/sources.list.default" ]

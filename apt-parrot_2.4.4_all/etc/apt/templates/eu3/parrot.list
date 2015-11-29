@@ -1,3 +1,0 @@
-deb http://repo.feliwyn.fr/parrot/ stable main contrib non-free
-#deb-src http://repo.feliwyn.fr/parrot/ stable main contrib non-free
-#deb http://repo.feliwyn.fr/parrot/ testing main contrib non-free

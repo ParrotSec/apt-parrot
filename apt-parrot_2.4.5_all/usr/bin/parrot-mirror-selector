@@ -11,7 +11,6 @@ MIRRORS LIST <codename>  - <description> ([<debian archive> +] <parrot archive>)
 		us4  - north america (debian us mirror + frozenbox server0 mirror)
 		eu   - europe (GARR)
 		eu2  - europe (debian GARR + central archive)
-		eu3  - europe (debian GARR + mirror offered by feliwyn.fr)
 		eu4  - europe (debian GARR + mirror offered by smoothosting.co.uk)
 		eu5  - europe (debian GARR + mirror offered by cloudflare)
 		asia - asia (YANDEX)
@@ -23,7 +22,6 @@ MIRRORS LIST <codename>  - <description> ([<debian archive> +] <parrot archive>)
 		frozenbox  - central mirror
 		cloudflare - worldwide CDN
 		garr       - italy
-		felywin    - france
 		smooth     - UK
 		mtu        - USA
 		yandex     - russia
@@ -200,9 +198,6 @@ case $1 in
 	;;
 	mtu)
 		us
-	;;
-	felywin)
-		eu3
 	;;
 	smooth)
 		eu4
