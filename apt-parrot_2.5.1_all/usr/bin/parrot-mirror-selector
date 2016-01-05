@@ -25,50 +25,41 @@ EXAMPLE
 
 
 function eu() {
-	cat /etc/apt/templates/eu/debian.list > /etc/apt/sources.list.d/debian.list
 	cat /etc/apt/templates/eu/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 function eu2() {
-	cat /etc/apt/templates/eu2/debian.list > /etc/apt/sources.list.d/debian.list
 	cat /etc/apt/templates/eu2/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 function eu4() {
-	cat /etc/apt/templates/eu4/debian.list > /etc/apt/sources.list.d/debian.list
 	cat /etc/apt/templates/eu4/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 function eu5() {
-	cat /etc/apt/templates/eu5/debian.list > /etc/apt/sources.list.d/debian.list
 	cat /etc/apt/templates/eu5/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
+
 function us() {
-	cat /etc/apt/templates/us/debian.list > /etc/apt/sources.list.d/debian.list
 	cat /etc/apt/templates/us/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 
-
 function asia() {
-	cat /etc/apt/templates/asia/debian.list > /etc/apt/sources.list.d/debian.list
 	cat /etc/apt/templates/asia/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 
 function sa() {
-	cat /etc/apt/templates/sa/debian.list > /etc/apt/sources.list.d/debian.list
 	cat /etc/apt/templates/sa/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 function sa2() {
-	cat /etc/apt/templates/sa2/debian.list > /etc/apt/sources.list.d/debian.list
 	cat /etc/apt/templates/sa2/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 function sa3() {
-	cat /etc/apt/templates/sa3/debian.list > /etc/apt/sources.list.d/debian.list
 	cat /etc/apt/templates/sa3/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
