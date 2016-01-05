@@ -1,3 +1,0 @@
-deb http://lug.mtu.edu/parrot/ stable main contrib non-free
-#deb-src http://lug.mtu.edu/parrot/ stable main contrib non-free
-#deb http://lug.mtu.edu/parrot/ testing main contrib non-free

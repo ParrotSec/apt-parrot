@@ -1,0 +1,9 @@
+## stable repository
+deb http://sa2.archive.parrotsec.org/mirrors/parrot stable main contrib non-free
+#deb-src http://sa2.archive.parrotsec.org/mirrors/parrot stable main contrib non-free
+
+## security repository
+deb http://archive.parrotsec.org/mirrors/parrot stable-security main contrib non-free
+
+## testing repository
+#deb http://sa2.archive.parrotsec.org/mirrors/parrot testing main contrib non-free

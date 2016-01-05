@@ -1,4 +1,0 @@
-deb http://garr.archive.parrotsec.org/mirrors/parrot stable main contrib non-free
-#deb-src http://garr.archive.parrotsec.org/mirrors/parrot stable main contrib non-free
-#deb http://garr.archive.parrotsec.org/mirrors/parrot testing main contrib non-free
-

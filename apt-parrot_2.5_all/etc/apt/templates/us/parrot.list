@@ -1,0 +1,9 @@
+## stable repository
+deb http://lug.mtu.edu/parrot/ stable main contrib non-free
+#deb-src http://lug.mtu.edu/parrot/ stable main contrib non-free
+
+## security repository
+deb http://archive.parrotsec.org/mirrors/parrot stable-security main contrib non-free
+
+## testing repository
+#deb http://lug.mtu.edu/parrot/ testing main contrib non-free
