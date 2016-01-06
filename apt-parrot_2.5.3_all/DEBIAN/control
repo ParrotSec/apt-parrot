@@ -1,10 +1,9 @@
 Package: apt-parrot
-Version: 2.5.1
+Version: 2.5.3
 Architecture: all
 Maintainer: Lorenzo EclipseSpark Faletra <eclipse@frozenbox.org>
 Installed-Size: 68
-Depends: apt
-Pre-Depends: parrot-archive-keyring
+Pre-Depends: parrot-archive-keyring, apt
 Recommends: parrot-core, python-apt-common (>= 0.8.8.2-parrot0), apt-xapian-index
 Conflicts: apt-frozenrepos
 Includes: parrot-update-manager (<= 1.6)
