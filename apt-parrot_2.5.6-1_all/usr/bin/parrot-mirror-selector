@@ -12,7 +12,7 @@ MIRRORS
             eu4   -    ?     -   europe       -    england      (SMOOTHOSTING)
             eu5   - 250 Mbps -   europe       -[multiple nodes] (CLOUDFLARE)
             asia  -  1 Gbps  -    asia        -    russia       (YANDEX)
-			asia2 -  1 Gbps  -    asia        -  bangladesh     (DHAKACOM)
+            asia2 -  1 Gbps  -    asia        -  bangladesh     (DHAKACOM)
             sa    - 100 Mbps - south america  -    ecuador      (CEDIA)
             sa2   - 100 Mbps - south america  -    ecuador      (ESPOCH)
             sa3   - 100 Mbps - south america  -    ecuador      (UTA)
