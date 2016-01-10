@@ -18,7 +18,7 @@ then
 	parrot-mirror-selector us
 fi
 
-if [ -e "/etc/apt/sources.list.default" ]
+if ! [ -e "/etc/apt/sources.list" ]
 then
 	cp /etc/apt/sources.list.default /etc/apt/sources.list
 fi
