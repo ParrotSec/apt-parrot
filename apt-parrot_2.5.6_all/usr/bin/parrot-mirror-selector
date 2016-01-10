@@ -3,17 +3,21 @@
 function list() {
 	echo -e "Parrot Mirror Selector - set up the APT mirror you desire
 		
-MIRRORS codename -   location    (provider)
+MIRRORS
+         codename -  speed   -  region       -   country       (provider)
  
-            us   - north america (LUG MTU)
-            eu   -   europe      (GARR)
-            eu2  -   europe      (FROZENBOX)
-            eu4  -   europe      (SMOOTHOSTING)
-            eu5  -   europe      (CLOUDFLARE)
-            asia -    asia       (YANDEX)
-            sa   - south america (CEDIA)
-            sa2  - south america (ESPOCH)
-            sa3  - south america (UTA)
+            us    -  1 Gbps  - north america  - massachussetts  (LUG MTU)
+            eu    - 10 Gbps  -   europe       -    italy        (GARR)
+            eu2   - 250 Mbps -   europe       -    france       (FROZENBOX)
+            eu4   -    ?     -   europe       -    england      (SMOOTHOSTING)
+            eu5   - 250 Mbps -   europe       -[multiple nodes] (CLOUDFLARE)
+            asia  -  1 Gbps  -    asia        -    russia       (YANDEX)
+			asia2 -  1 Gbps  -    asia        -  bangladesh     (DHAKACOM)
+            sa    - 100 Mbps - south america  -    ecuador      (CEDIA)
+            sa2   - 100 Mbps - south america  -    ecuador      (ESPOCH)
+            sa3   - 100 Mbps - south america  -    ecuador      (UTA)
+            me    -  1 Gpbs  -  middle east   -     iran        (ASIS)
+
 
 USAGE
  	 parrot-mirror-selector <mirror codename>
@@ -50,6 +54,10 @@ function asia() {
 	cat /etc/apt/templates/asia/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
+function asia2() {
+	cat /etc/apt/templates/asia2/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
 
 function sa() {
 	cat /etc/apt/templates/sa/parrot.list > /etc/apt/sources.list.d/parrot.list
@@ -61,6 +69,10 @@ function sa2() {
 
 function sa3() {
 	cat /etc/apt/templates/sa3/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function me() {
+	cat /etc/apt/templates/me/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 
@@ -86,6 +98,9 @@ case $1 in
 	asia)
 		asia
 	;;
+	asia2)
+		asia2
+	;;
 	sa)
 		sa
 	;;
@@ -94,6 +109,9 @@ case $1 in
 	;;
 	sa3)
 		sa3
+	;;
+	me)
+		me
 	;;
 	*)
 		list
