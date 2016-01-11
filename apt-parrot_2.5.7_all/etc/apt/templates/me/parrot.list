@@ -1,0 +1,11 @@
+## stable repository
+deb http://parrot.asis.io/ stable main contrib non-free
+#deb-src http://parrot.asis.io/ stable main contrib non-free
+
+## decentralized security repository
+deb http://parrot.asis.io stable-security main contrib non-free
+## central security repository
+deb http://archive.parrotsec.org/mirrors/parrot stable-security main contrib non-free
+
+## testing repository
+#deb http://parrot.asis.io/ testing main contrib non-free
