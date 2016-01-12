@@ -95,26 +95,26 @@ case $1 in
 	list)
 		list
 	;;
-	us)
-		us
+	usa)
+		usa
 	;;
-	us2)
-		us2
+	usa2)
+		usa2
 	;;
-	us3)
-		us3
+	usa3)
+		usa3
 	;;
-	eu)
-		eu
+	euro)
+		euro
 	;;
-	eu2)
-		eu2
+	euro2)
+		euro2
 	;;
-	eu3)
-		eu3
+	euro3)
+		euro3
 	;;
-	eu4)
-		eu4
+	euro4)
+		euro4
 	;;
 	asia)
 		asia
@@ -122,17 +122,20 @@ case $1 in
 	asia2)
 		asia2
 	;;
-	sa)
-		sa
+	sam)
+		sam
 	;;
-	sa2)
-		sa2
+	sam2)
+		sam2
 	;;
-	sa3)
-		sa3
+	sam3)
+		sam3
 	;;
-	me)
-		me
+	meast)
+		meast
+	;;
+	ocean)
+		ocean
 	;;
 	*)
 		list
