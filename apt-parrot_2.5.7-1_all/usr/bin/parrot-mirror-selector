@@ -7,8 +7,8 @@ MIRRORS
          codename -  speed   -  region       -   country       (provider)
  
             us    -  1 Gbps  - north america  - massachussetts  (LUG MTU)
-            us2   -  1 Gbps  - north america  -   virginia      (JMU) -
-            us3   -  1 Gbps  - north america  -   new york      (CLARKSON) -
+            us2   -  1 Gbps  - north america  -   virginia      (JMU)
+            us3   -  1 Gbps  - north america  -   new york      (CLARKSON)
             eu    - 10 Gbps  -   europe       -    italy        (GARR)
             eu2   - 250 Mbps -   europe       -    france       (FROZENBOX)
             eu4   -    ?     -   europe       -    england      (SMOOTHOSTING)
