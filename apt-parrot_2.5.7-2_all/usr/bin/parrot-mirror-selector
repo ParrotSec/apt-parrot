@@ -6,19 +6,19 @@ function list() {
 MIRRORS
          codename -  speed   -  region       -   country       (provider)
  
-            us    -  1 Gbps  - north america  - massachussetts  (LUG MTU)
-            us2   -  1 Gbps  - north america  -   virginia      (JMU)
-            us3   -  1 Gbps  - north america  -   new york      (CLARKSON)
-            eu    - 10 Gbps  -   europe       -    italy        (GARR)
-            eu2   - 250 Mbps -   europe       -    france       (FROZENBOX)
-            eu3   -  1 Gbps  -   europe       -    france       (LAGOON)
-            eu4   -    ?     -   europe       -    england      (SMOOTHOSTING)
-            asia  -  1 Gbps  -    asia        -    russia       (YANDEX)
-            asia2 -  1 Gbps  -    asia        -  bangladesh     (DHAKACOM)
-            sa    - 100 Mbps - south america  -    ecuador      (CEDIA)
-            sa2   - 100 Mbps - south america  -    ecuador      (ESPOCH)
-            sa3   - 100 Mbps - south america  -    ecuador      (UTA)
-            me    -  1 Gpbs  -  middle east   -     iran        (ASIS)
+            usa     -  1 Gbps  - north america  - massachussetts  (LUG MTU)
+            usa2    -  1 Gbps  - north america  -   virginia      (JMU)
+            usa3    -  1 Gbps  - north america  -   new york      (CLARKSON)
+            euro    - 10 Gbps  -   europe       -    italy        (GARR)
+            euro2   - 250 Mbps -   europe       -    france       (FROZENBOX)
+            euro4   -    ?     -   europe       -    england      (SMOOTHOSTING)
+            asia    -  1 Gbps  -    asia        -    russia       (YANDEX)
+            asia2   -  1 Gbps  -    asia        -  bangladesh     (DHAKACOM)
+            sam     - 100 Mbps - south america  -    ecuador      (CEDIA)
+            sam2    - 100 Mbps - south america  -    ecuador      (ESPOCH)
+            sam3    - 100 Mbps - south america  -    ecuador      (UTA)
+            meast   -  1 Gpbs  -  middle east   -     iran        (ASIS)
+            ocean   -  1 Gbps  -   oceania      - new caledonia   (LAGOON)
 
 
 USAGE
@@ -30,33 +30,33 @@ EXAMPLE
 }
 
 
-function us() {
-	cat /etc/apt/templates/us/parrot.list > /etc/apt/sources.list.d/parrot.list
+function usa() {
+	cat /etc/apt/templates/usa/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
-function us2() {
-	cat /etc/apt/templates/us2/parrot.list > /etc/apt/sources.list.d/parrot.list
+function usa2() {
+	cat /etc/apt/templates/usa2/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
-function us3() {
-	cat /etc/apt/templates/us3/parrot.list > /etc/apt/sources.list.d/parrot.list
+function usa3() {
+	cat /etc/apt/templates/usa3/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 
-function eu() {
-	cat /etc/apt/templates/eu/parrot.list > /etc/apt/sources.list.d/parrot.list
+function euro() {
+	cat /etc/apt/templates/euro/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
-function eu2() {
-	cat /etc/apt/templates/eu2/parrot.list > /etc/apt/sources.list.d/parrot.list
+function euro2() {
+	cat /etc/apt/templates/euro2/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
-function eu3() {
-	cat /etc/apt/templates/eu3/parrot.list > /etc/apt/sources.list.d/parrot.list
+function euro3() {
+	cat /etc/apt/templates/euro3/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
-function eu4() {
-	cat /etc/apt/templates/eu4/parrot.list > /etc/apt/sources.list.d/parrot.list
+function euro4() {
+	cat /etc/apt/templates/euro4/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 
@@ -69,20 +69,25 @@ function asia2() {
 }
 
 
-function sa() {
-	cat /etc/apt/templates/sa/parrot.list > /etc/apt/sources.list.d/parrot.list
+function sam() {
+	cat /etc/apt/templates/sam/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
-function sa2() {
-	cat /etc/apt/templates/sa2/parrot.list > /etc/apt/sources.list.d/parrot.list
+function sam2() {
+	cat /etc/apt/templates/sam2/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
-function sa3() {
-	cat /etc/apt/templates/sa3/parrot.list > /etc/apt/sources.list.d/parrot.list
+function sam3() {
+	cat /etc/apt/templates/sam3/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
-function me() {
-	cat /etc/apt/templates/me/parrot.list > /etc/apt/sources.list.d/parrot.list
+
+function meast() {
+	cat /etc/apt/templates/meast/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function ocean() {
+	cat /etc/apt/templates/ocean/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 
