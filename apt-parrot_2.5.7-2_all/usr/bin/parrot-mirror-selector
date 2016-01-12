@@ -11,6 +11,7 @@ MIRRORS
             us3   -  1 Gbps  - north america  -   new york      (CLARKSON)
             eu    - 10 Gbps  -   europe       -    italy        (GARR)
             eu2   - 250 Mbps -   europe       -    france       (FROZENBOX)
+            eu3   -  1 Gbps  -   europe       -    france       (LAGOON)
             eu4   -    ?     -   europe       -    england      (SMOOTHOSTING)
             asia  -  1 Gbps  -    asia        -    russia       (YANDEX)
             asia2 -  1 Gbps  -    asia        -  bangladesh     (DHAKACOM)
@@ -48,6 +49,10 @@ function eu() {
 
 function eu2() {
 	cat /etc/apt/templates/eu2/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function eu3() {
+	cat /etc/apt/templates/eu3/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 function eu4() {
@@ -99,6 +104,9 @@ case $1 in
 	;;
 	eu2)
 		eu2
+	;;
+	eu3)
+		eu3
 	;;
 	eu4)
 		eu4
