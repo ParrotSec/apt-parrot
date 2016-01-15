@@ -6,13 +6,14 @@ function list() {
 MIRRORS
          codename -  speed   -  region       -   country       (provider)
  
-            usa     -  1 Gbps  - north america  - massachussetts  (LUG MTU)
-            usa2    -  1 Gbps  - north america  -   virginia      (JMU)
-            usa3    -  1 Gbps  - north america  -   new york      (CLARKSON)
+            usa     -  1 Gbps  - north america  -   michigan      (LUG MTU)
+            usa2    -  1 Gbps  - north america  - massachussetts  (SIPB MIT)
+            usa3    -  1 Gbps  - north america  -   virginia      (JMU)
+            usa4    -  1 Gbps  - north america  -   new york      (CLARKSON)
             euro    - 10 Gbps  -   europe       -    italy        (GARR)
             euro2   - 250 Mbps -   europe       -    france       (FROZENBOX)
-            euro3   - 20 Gbps  -   europe       -    germany      (RWTH-AACHEN)
-            euro4   -    ?     -   europe       -    england      (SMOOTHOSTING)
+            euro3   - 20 Gbps  -   europe       -   germany       (RWTH-AACHEN)
+            euro4   -    ?     -   europe       -   england       (SMOOTHOSTING)
             asia    -  1 Gbps  -    asia        -    russia       (YANDEX)
             asia2   -  1 Gbps  -    asia        -  bangladesh     (DHAKACOM)
             sam     - 100 Mbps - south america  -    ecuador      (CEDIA)
@@ -41,6 +42,10 @@ function usa2() {
 
 function usa3() {
 	cat /etc/apt/templates/usa3/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function usa4() {
+	cat /etc/apt/templates/usa4/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
 
@@ -104,6 +109,9 @@ case $1 in
 	;;
 	usa3)
 		usa3
+	;;
+	usa4)
+		usa4
 	;;
 	euro)
 		euro
