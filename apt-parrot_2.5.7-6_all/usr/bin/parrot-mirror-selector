@@ -14,8 +14,10 @@ MIRRORS
             euro2   - 250 Mbps -   europe       -    france       (FROZENBOX)
             euro3   - 20 Gbps  -   europe       -   germany       (RWTH-AACHEN)
             euro4   -    ?     -   europe       -   england       (SMOOTHOSTING)
+            euro6   -  1 Gbps  -   europe       -    italy        (dasaweb)
             asia    -  1 Gbps  -    asia        -    russia       (YANDEX)
             asia2   -  1 Gbps  -    asia        -  bangladesh     (DHAKACOM)
+            asia3   - 250 Mbps -    asia        -     china       (YFGAO)
             sam     - 100 Mbps - south america  -    ecuador      (CEDIA)
             sam2    - 100 Mbps - south america  -    ecuador      (ESPOCH)
             sam3    - 100 Mbps - south america  -    ecuador      (UTA)
@@ -65,6 +67,10 @@ function euro4() {
 	cat /etc/apt/templates/euro4/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
+function euro6() {
+	cat /etc/apt/templates/euro6/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
 
 function asia() {
 	cat /etc/apt/templates/asia/parrot.list > /etc/apt/sources.list.d/parrot.list
@@ -74,6 +80,9 @@ function asia2() {
 	cat /etc/apt/templates/asia2/parrot.list > /etc/apt/sources.list.d/parrot.list
 }
 
+function asia4() {
+	cat /etc/apt/templates/asia3/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
 
 function sam() {
 	cat /etc/apt/templates/sam/parrot.list > /etc/apt/sources.list.d/parrot.list
@@ -125,11 +134,17 @@ case $1 in
 	euro4)
 		euro4
 	;;
+	euro6)
+		euro6
+	;;
 	asia)
 		asia
 	;;
 	asia2)
 		asia2
+	;;
+	asia3)
+		asia3
 	;;
 	sam)
 		sam
