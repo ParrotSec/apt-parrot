@@ -1,0 +1,167 @@
+#!/bin/bash
+
+function list() {
+	echo -e "Parrot Mirror Selector - set up the APT mirror you desire
+		
+MIRRORS
+         codename -  speed   -  region       -   country       (provider)
+ 
+            usa     -  1 Gbps  - north america  -   michigan      (LUG MTU)
+            usa2    -  1 Gbps  - north america  - massachussetts  (SIPB MIT)
+            usa3    -  1 Gbps  - north america  -   virginia      (JMU)
+            usa4    -  1 Gbps  - north america  -   new york      (CLARKSON)
+            euro    - 10 Gbps  -   europe       -    italy        (GARR)
+            euro2   - 250 Mbps -   europe       -    france       (FROZENBOX)
+            euro3   - 20 Gbps  -   europe       -   germany       (RWTH-AACHEN)
+            euro4   -    ?     -   europe       -   england       (SMOOTHOSTING)
+            euro6   -  1 Gbps  -   europe       -    italy        (dasaweb)
+            asia    -  1 Gbps  -    asia        -    russia       (YANDEX)
+            asia2   -  1 Gbps  -    asia        -  bangladesh     (DHAKACOM)
+            asia3   - 250 Mbps -    asia        -     china       (YFGAO)
+            sam     - 100 Mbps - south america  -    ecuador      (CEDIA)
+            sam2    - 100 Mbps - south america  -    ecuador      (ESPOCH)
+            sam3    - 100 Mbps - south america  -    ecuador      (UTA)
+            meast   -  1 Gpbs  -  middle east   -     iran        (ASIS)
+            ocean   -  1 Gbps  -   oceania      - new caledonia   (LAGOON)
+
+
+USAGE
+ 	 parrot-mirror-selector <mirror codename>
+
+EXAMPLE
+ 	 parrot-mirror-selector asia
+"
+}
+
+
+function usa() {
+	cat /etc/apt/templates/usa/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function usa2() {
+	cat /etc/apt/templates/usa2/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function usa3() {
+	cat /etc/apt/templates/usa3/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function usa4() {
+	cat /etc/apt/templates/usa4/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+
+function euro() {
+	cat /etc/apt/templates/euro/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function euro2() {
+	cat /etc/apt/templates/euro2/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function euro3() {
+	cat /etc/apt/templates/euro3/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function euro4() {
+	cat /etc/apt/templates/euro4/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function euro6() {
+	cat /etc/apt/templates/euro6/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+
+function asia() {
+	cat /etc/apt/templates/asia/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function asia2() {
+	cat /etc/apt/templates/asia2/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function asia4() {
+	cat /etc/apt/templates/asia3/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function sam() {
+	cat /etc/apt/templates/sam/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function sam2() {
+	cat /etc/apt/templates/sam2/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function sam3() {
+	cat /etc/apt/templates/sam3/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+
+function meast() {
+	cat /etc/apt/templates/meast/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+function ocean() {
+	cat /etc/apt/templates/ocean/parrot.list > /etc/apt/sources.list.d/parrot.list
+}
+
+
+case $1 in
+	list)
+		list
+	;;
+	usa)
+		usa
+	;;
+	usa2)
+		usa2
+	;;
+	usa3)
+		usa3
+	;;
+	usa4)
+		usa4
+	;;
+	euro)
+		euro
+	;;
+	euro2)
+		euro2
+	;;
+	euro3)
+		euro3
+	;;
+	euro4)
+		euro4
+	;;
+	euro6)
+		euro6
+	;;
+	asia)
+		asia
+	;;
+	asia2)
+		asia2
+	;;
+	asia3)
+		asia3
+	;;
+	sam)
+		sam
+	;;
+	sam2)
+		sam2
+	;;
+	sam3)
+		sam3
+	;;
+	meast)
+		meast
+	;;
+	ocean)
+		ocean
+	;;
+	*)
+		list
+	;;
+esac

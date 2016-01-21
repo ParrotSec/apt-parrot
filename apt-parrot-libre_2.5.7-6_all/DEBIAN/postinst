@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+
+
+#update xapian index
+
+if [ -x "/usr/sbin/update-xapian-index" ]
+then
+	update-apt-xapian-index -vf
+fi
+
+
+
+#install parrot repositories if missing
+
+if ! [ -e "/etc/apt/sources.list.d/parrot.list" ]
+then
+	parrot-mirror-selector us
+fi
+
+if ! [ -e "/etc/apt/sources.list" ]
+then
+	cp /etc/apt/sources.list.default /etc/apt/sources.list
+fi

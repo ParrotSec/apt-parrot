@@ -1,0 +1,27 @@
+Package: *
+Pin: release o=Parrot
+Pin-Priority: 1001
+
+Package: *
+Pin: release a=stable-security
+Pin-Priority: 1002
+
+Package: *
+Pin: release o=Parrot, a=testing
+Pin-Priority: 500
+
+Package: *
+Pin: release o=Debian
+Pin-Priority: 50
+
+Package: *
+Pin: release o=Kali
+Pin-Priority: 50
+
+Package: *
+Pin: release o=Ubuntu
+Pin-Priority: 50
+
+Package: *
+Pin: release o=archive.parrotsec.org
+Pin-Priority: 50

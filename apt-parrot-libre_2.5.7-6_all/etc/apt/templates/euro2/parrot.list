@@ -1,0 +1,9 @@
+## stable repository
+deb http://eu2.archive.parrotsec.org/mirrors/parrot stable main
+#deb-src http://eu2.archive.parrotsec.org/mirrors/parrot stable main
+
+## security repository
+deb http://archive.parrotsec.org/mirrors/parrot stable-security main
+
+## testing repository
+#deb http://eu2.archive.parrotsec.org/mirrors/parrot testing main
