@@ -15,7 +15,7 @@ fi
 
 if ! [ -e "/etc/apt/sources.list.d/parrot.list" ]
 then
-	parrot-mirror-selector us
+	parrot-mirror-selector euro3
 fi
 
 if ! [ -e "/etc/apt/sources.list" ]
