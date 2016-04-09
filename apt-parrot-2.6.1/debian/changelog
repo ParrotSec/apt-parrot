@@ -1,3 +1,9 @@
+apt-parrot (2.6.1) testing; urgency=medium
+
+  * Add /etc/parrot.testing check for postinst
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>  Sat, 09 Apr 2016 22:51:34 +0200
+
 apt-parrot (2.6) testing; urgency=high
 
   * Update for Parrot 3
