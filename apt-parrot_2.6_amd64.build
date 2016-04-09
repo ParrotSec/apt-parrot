@@ -36,12 +36,40 @@ dh binary
 make[1]: ingresso nella directory "/home/eclipse/Desktop/repo/apt-parrot/apt-parrot-2.6"
 chmod -R 0644 apt-parrot/*
 chmod 755 apt-parrot/usr/bin/parrot-mirror-selector
-ln -s apt-parrot/usr/bin/parrot-mirror-selector apt-parrot/usr/bin/parrot-mirror
-ln: creazione del collegamento simbolico 'apt-parrot/usr/bin/parrot-mirror' non riuscita: File già esistente
-Makefile:10: set di istruzioni per l'obiettivo "install" non riuscito
-make[1]: *** [install] Errore 1
+chown root:root apt-parrot/*
+cp -rf apt-parrot/* /home/eclipse/Desktop/repo/apt-parrot/apt-parrot-2.6/debian/apt-parrot/
 make[1]: uscita dalla directory "/home/eclipse/Desktop/repo/apt-parrot/apt-parrot-2.6"
-dh_auto_install: make -j1 install DESTDIR=/home/eclipse/Desktop/repo/apt-parrot/apt-parrot-2.6/debian/apt-parrot AM_UPDATE_INFO_DIR=no returned exit code 2
-debian/rules:4: set di istruzioni per l'obiettivo "binary" non riuscito
-make: *** [binary] Errore 2
-dpkg-buildpackage: error: fakeroot debian/rules binary gave error exit status 2
+   dh_installdocs
+   dh_installchangelogs
+   dh_installdebconf
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: unknown information field 'Includes' in input data in package's section of control info file
+dpkg-gencontrol: warning: package apt-parrot: unused substitution variable ${misc:Depends}
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: generazione del pacchetto "apt-parrot" in "../apt-parrot_2.6_all.deb".
+ dpkg-genchanges  >../apt-parrot_2.6_amd64.changes
+dpkg-genchanges: warning: unknown information field 'Includes' in input data in package's section of control info file
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build apt-parrot-2.6
+dpkg-source: warning: unknown information field 'Includes' in input data in package's section of control info file
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
+Now running lintian...
+command failed with error code 2 at /usr/share/lintian/collection/unpacked line 215.
+warning: collect info unpacked about package apt-parrot failed
+warning: skipping check of binary package apt-parrot
+W: apt-parrot source: debhelper-but-no-misc-depends apt-parrot
+W: apt-parrot source: maintainer-script-lacks-debhelper-token debian/apt-parrot.postinst
+W: apt-parrot source: maintainer-also-in-uploaders
+W: apt-parrot source: out-of-date-standards-version 3.9.6 (current is 3.9.7)
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bZ9vEiJSia/pool/a/apt-parrot/apt-parrot_2.6_all_binary/unpacked/etc/apt': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bZ9vEiJSia/pool/a/apt-parrot/apt-parrot_2.6_all_binary/unpacked/usr/bin': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bZ9vEiJSia/pool/a/apt-parrot/apt-parrot_2.6_all_binary/unpacked/usr/share': Permission denied
+delete_dir ($contents): No child processes at /usr/share/lintian/commands/lintian line 802.
+Finished running lintian.
