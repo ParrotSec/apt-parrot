@@ -1,0 +1,47 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: source package apt-parrot
+dpkg-buildpackage: source version 2.6
+dpkg-buildpackage: source distribution testing
+dpkg-buildpackage: source changed by Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+ dpkg-source --before-build apt-parrot-2.6
+dpkg-buildpackage: host architecture amd64
+dpkg-source: warning: unknown information field 'Includes' in input data in package's section of control info file
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b apt-parrot-2.6
+dpkg-source: warning: unknown information field 'Includes' in input data in package's section of control info file
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building apt-parrot in apt-parrot_2.6.tar.xz
+dpkg-source: info: building apt-parrot in apt-parrot_2.6.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_update_autotools_config
+   dh_auto_configure
+   dh_auto_build
+	make -j1
+make[1]: ingresso nella directory "/home/eclipse/Desktop/repo/apt-parrot/apt-parrot-2.6"
+make[1]: Nessuna operazione da eseguire per "all".
+make[1]: uscita dalla directory "/home/eclipse/Desktop/repo/apt-parrot/apt-parrot-2.6"
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+	make -j1 install DESTDIR=/home/eclipse/Desktop/repo/apt-parrot/apt-parrot-2.6/debian/apt-parrot AM_UPDATE_INFO_DIR=no
+make[1]: ingresso nella directory "/home/eclipse/Desktop/repo/apt-parrot/apt-parrot-2.6"
+chmod -R 0644 apt-parrot/*
+chmod 755 apt-parrot/usr/bin/parrot-mirror-selector
+ln -s apt-parrot/usr/bin/parrot-mirror-selector apt-parrot/usr/bin/parrot-mirror
+ln: creazione del collegamento simbolico 'apt-parrot/usr/bin/parrot-mirror' non riuscita: File già esistente
+Makefile:10: set di istruzioni per l'obiettivo "install" non riuscito
+make[1]: *** [install] Errore 1
+make[1]: uscita dalla directory "/home/eclipse/Desktop/repo/apt-parrot/apt-parrot-2.6"
+dh_auto_install: make -j1 install DESTDIR=/home/eclipse/Desktop/repo/apt-parrot/apt-parrot-2.6/debian/apt-parrot AM_UPDATE_INFO_DIR=no returned exit code 2
+debian/rules:4: set di istruzioni per l'obiettivo "binary" non riuscito
+make: *** [binary] Errore 2
+dpkg-buildpackage: error: fakeroot debian/rules binary gave error exit status 2
