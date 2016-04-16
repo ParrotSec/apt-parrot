@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sat, 16 Apr 2016 14:20:51 +0200
+Source: apt-parrot
+Binary: apt-parrot
+Architecture: source all
+Version: 2.6.2
+Distribution: testing
+Urgency: medium
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+Changed-By: EclipseSpark <eclipse@localhost.localdomain>
+Description:
+ apt-parrot - Parrot APT repositories
+Changes:
+ apt-parrot (2.6.2) testing; urgency=medium
+ .
+   * Fix euro3 halifax domain
+Checksums-Sha1:
+ 4254c4ece6cd9e16f72782db0cf7e76acdfad073 726 apt-parrot_2.6.2.dsc
+ d26cdee8165e211087ce93d68883b193f9a7e379 13956 apt-parrot_2.6.2.tar.xz
+ e1b4f887e071c179a548ac6f07536ae47a5361ec 14456 apt-parrot_2.6.2_all.deb
+Checksums-Sha256:
+ 544f04c5e09e5c2ed70b885387c32da6eb9c75197494fe9dfd5a58c9ef98f365 726 apt-parrot_2.6.2.dsc
+ e659df5f0e6c0e2174b46e4b28f31a1cdc2dacd3c7e1d05322572e1e4e6fe5a9 13956 apt-parrot_2.6.2.tar.xz
+ 02f9c01475d1a83cdd7276f2f845f2274c54670e29d065a78c1d15ed0d2c7f91 14456 apt-parrot_2.6.2_all.deb
+Files:
+ f40d177ebdae963e482ac47fa8f578fd 726 parrot required apt-parrot_2.6.2.dsc
+ 1e2d1967ef776b40ada766f6cdc03959 13956 parrot required apt-parrot_2.6.2.tar.xz
+ 2621151ff45215909cfcb860275414f8 14456 parrot important apt-parrot_2.6.2_all.deb

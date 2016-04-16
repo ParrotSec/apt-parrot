@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: apt-parrot
 Binary: apt-parrot
 Architecture: all
-Version: 2.6.1
+Version: 2.6.2
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>, Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Homepage: http://www.parrotsec.org/
@@ -12,8 +12,8 @@ Build-Depends-Indep: pkg-config
 Package-List:
  apt-parrot deb parrot important arch=all
 Checksums-Sha1:
- 4bd4af5d2fd1b8ff8669cde1eea084b876e0a65a 13932 apt-parrot_2.6.1.tar.xz
+ d26cdee8165e211087ce93d68883b193f9a7e379 13956 apt-parrot_2.6.2.tar.xz
 Checksums-Sha256:
- c004eb3ba340a0c86afe5c1feba586403a2078c56b598eb603ac8c5220d7746c 13932 apt-parrot_2.6.1.tar.xz
+ e659df5f0e6c0e2174b46e4b28f31a1cdc2dacd3c7e1d05322572e1e4e6fe5a9 13956 apt-parrot_2.6.2.tar.xz
 Files:
- 21042071bd1bf7fc5fa24740bf1000c9 13932 apt-parrot_2.6.1.tar.xz
+ 1e2d1967ef776b40ada766f6cdc03959 13956 apt-parrot_2.6.2.tar.xz

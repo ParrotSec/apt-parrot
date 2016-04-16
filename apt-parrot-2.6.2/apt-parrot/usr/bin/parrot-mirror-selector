@@ -85,7 +85,7 @@ case $1 in
 		base="http://eu2.archive.parrotsec.org/parrot/"
 	;;
 	euro3)
-		base="http://euro3.archive.parrotec.org/parrotsec/"
+		base="http://euro3.archive.parrotsec.org/parrotsec/"
 	;;
 	euro4)
 		base="http://parrot.dasaweb.net/"
