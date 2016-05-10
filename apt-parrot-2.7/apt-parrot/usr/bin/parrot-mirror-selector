@@ -25,8 +25,8 @@ MIRRORS
 
 BRANCHES
 	current supported branches are
-		stable   - our stable archive
-		testing  - our development tree
+		stable  | parrot        - our stable archive
+		testing | parrot-teting - our development tree
 
 AREAS
 	current supported parameters are
@@ -42,12 +42,18 @@ EXAMPLE
 }
 
 
-branch="stable"
+branch="parrot"
 case $2 in
 	stable)
-		branch="stable"
+		branch="parrot"
 	;;
 	testing)
+		branch="testing"
+	;;
+	parrot)
+		branch="parrot"
+	;;
+	parrot-testing)
 		branch="testing"
 	;;
 esac

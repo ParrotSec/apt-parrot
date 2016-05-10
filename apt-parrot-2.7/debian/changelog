@@ -1,3 +1,9 @@
+apt-parrot (2.7) testing; urgency=medium
+
+  * Update repo layout for parrot 3
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Tue, 10 May 2016 15:56:25 +0200
+
 apt-parrot (2.6.2) testing; urgency=medium
 
   * Fix euro3 halifax domain
