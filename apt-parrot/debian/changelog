@@ -1,3 +1,10 @@
+apt-parrot (2.7.1) testing; urgency=medium
+
+  * Fix layout
+  * Fix mit and mtu links (previously inverted)
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Wed, 11 May 2016 01:10:03 +0200
+
 apt-parrot (2.7) testing; urgency=medium
 
   * Update repo layout for parrot 3

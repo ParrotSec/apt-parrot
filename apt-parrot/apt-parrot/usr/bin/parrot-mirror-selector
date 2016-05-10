@@ -73,10 +73,10 @@ case $1 in
 		list
 	;;
 	usa)
-		base="http://mirrors.mit.edu/parrot/"
+		base="http://lug.mtu.edu/parrot/"
 	;;
 	usa2)
-		base="http://lug.mtu.edu/parrot/"
+		base="http://mirrors.mit.edu/parrot/"
 	;;
 	usa3)
 		base="http://mirror.jmu.edu/pub/parrot/"
