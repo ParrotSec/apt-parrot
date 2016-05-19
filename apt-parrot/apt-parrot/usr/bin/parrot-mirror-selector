@@ -2,18 +2,19 @@
 
 function list() {
 	echo -e "Parrot Mirror Selector - set up the APT mirror you desire
-		
+
 MIRRORS
          codename -  speed   -  region       -   country       (provider)
- 
+
             usa     -  1 Gbps  - north america  -   michigan      (LUG MTU)
             usa2    -  1 Gbps  - north america  - massachussetts  (SIPB MIT)
             usa3    -  1 Gbps  - north america  -   virginia      (JMU)
             usa4    -  1 Gbps  - north america  -   new york      (CLARKSON)
+            usa5    -  1 Gbps  - north america  -  california     (BERKELEY)
             euro    - 10 Gbps  -   europe       -    italy        (GARR)
             euro2   - 250 Mbps -   europe       -    france       (FROZENBOX)
-            euro3   - 20 Gbps  -   europe       -   germany       (RWTH-AACHEN)
-            euro4   -  1 Gbps  -   europe       -    italy        (dasaweb)
+            euro3   - 20 Gbps  -   europe       -    germany      (RWTH-AACHEN)
+            euro5   -  1 Gbps  -   europe       -    england      (WARWICK)
             asia    -  1 Gbps  -    asia        -    russia       (YANDEX)
             asia2   -  1 Gbps  -    asia        -  bangladesh     (DHAKACOM)
             asia3   - 250 Mbps -    asia        -     china       (YFGAO)
@@ -22,11 +23,13 @@ MIRRORS
             sam3    - 100 Mbps - south america  -    ecuador      (UTA)
             meast   -  1 Gpbs  -  middle east   -     iran        (ASIS)
             ocean   -  1 Gbps  -   oceania      - new caledonia   (LAGOON)
+            africa  - 100 Mbps -   africa       -    tanzania     (APTUS)
 
 BRANCHES
 	current supported branches are
-		stable  | parrot        - our stable archive
-		testing | parrot-teting - our development tree
+		parrot   - our stable archive
+                stable   - same as parrot
+		testing  - our development tree
 
 AREAS
 	current supported parameters are
@@ -84,6 +87,9 @@ case $1 in
 	usa4)
 		base="http://mirror.clarkson.edu/parrot/"
 	;;
+	usa5
+		base="http://mirrors.ocf.berkeley.edu/parrot/"
+	;;
 	euro)
 		base="http://eu.archive.parrotsec.org/mirrors/parrot/"
 	;;
@@ -94,6 +100,9 @@ case $1 in
 		base="http://euro3.archive.parrotsec.org/parrotsec/"
 	;;
 	euro4)
+		base="http://anorien.csc.warwick.ac.uk/mirrors/parrot/"
+	;;
+	euro5
 		base="http://parrot.dasaweb.net/"
 	;;
 	asia)
@@ -119,6 +128,9 @@ case $1 in
 	;;
 	ocean)
 		base="http://mirror.lagoon.nc/pub/parrot/"
+	;;
+	africa)
+		base="http://mirror.aptus.co.tz/pub/parrot/"
 	;;
 	*)
 		list
