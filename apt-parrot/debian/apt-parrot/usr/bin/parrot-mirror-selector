@@ -77,10 +77,10 @@ case $1 in
 	list)
 		list
 	;;
-	usa2)
+	usa)
 		base="http://lug.mtu.edu/parrot/"
 	;;
-	usa)
+	usa2)
 		base="http://mirrors.mit.edu/parrot/"
 	;;
 	usa3)
