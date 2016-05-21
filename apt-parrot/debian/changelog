@@ -1,3 +1,10 @@
+apt-parrot (2.7.3+parrot0) testing; urgency=high
+
+  * Fix syntax error
+  * Add new mirror offereb by the Academic Computer Club - Umeå University
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Sat, 21 May 2016 19:13:46 +0200
+
 apt-parrot (2.7.2) testing; urgency=medium
 
   * Add new mirrors

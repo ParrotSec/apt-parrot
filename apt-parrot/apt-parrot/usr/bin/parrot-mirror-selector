@@ -17,6 +17,7 @@ MIRRORS
             euro4   -  1 Gbps  -   europe       -    england      (WARWICK)
             euro5   - 10 Gbps  -   europe       -   netherland    (NLUUG)
             euro6   - 10 Gbps  -   europe       -    poland       (ONET)
+            euro7   -  4 Gbps  -   europe       -    sweden       (UMA)
             asia    -  1 Gbps  -    asia        -    russia       (YANDEX)
             asia2   -  1 Gbps  -    asia        -  bangladesh     (AMBERIT)
             asia3   - 10 Mbps  -    asia        -     china       (YFGAO)
@@ -88,7 +89,7 @@ case $1 in
 	usa4)
 		base="http://mirror.clarkson.edu/parrot/"
 	;;
-	usa5
+	usa5)
 		base="http://mirrors.ocf.berkeley.edu/parrot/"
 	;;
 	euro)
@@ -103,11 +104,14 @@ case $1 in
 	euro4)
 		base="http://anorien.csc.warwick.ac.uk/mirrors/parrot/"
 	;;
-	euro5
+	euro5)
 		base="http://ftp.nluug.nl/os/Linux/distr/parrot/"
 	;;
-	euro6
+	euro6)
 		base="http://mirror.onet.pl/pub/mirrors/parrot/"
+	;;
+	euro7)
+		base="http://ftp.acc.umu.se/mirror/parrotsec.org/parrot/"
 	;;
 	asia)
 		base="http://asia.archive.parrotsec.org/mirrors/parrot/"
