@@ -12,8 +12,8 @@ Build-Depends-Indep: pkg-config
 Package-List:
  apt-parrot deb parrot important arch=all
 Checksums-Sha1:
- c981a3b11877fc58a5929c3c85d2714b6b2d7c59 14096 apt-parrot_2.7.2.tar.xz
+ b1dd4555f15cc1c43a6a38447c9d8889539fb2d5 14132 apt-parrot_2.7.2.tar.xz
 Checksums-Sha256:
- f5af3cb84ce27e3057e8c42446b647a3b99b3687826b77bcd662ef26c38ae8fe 14096 apt-parrot_2.7.2.tar.xz
+ 236828e69e354008e4be47612b74e963b84e918ce2ce03308c11664edce72e99 14132 apt-parrot_2.7.2.tar.xz
 Files:
- 58023361063ad47934bf0ccfff7faf36 14096 apt-parrot_2.7.2.tar.xz
+ 5aaa63d7fed979712b19f7ecab7127be 14132 apt-parrot_2.7.2.tar.xz

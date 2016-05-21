@@ -6,21 +6,22 @@ function list() {
 MIRRORS
          codename -  speed   -  region       -   country       (provider)
 
-            usa     -  1 Gbps  - north america  -   michigan      (LUG MTU)
-            usa2    -  1 Gbps  - north america  - massachussetts  (SIPB MIT)
+            usa     -  1 Gbps  - north america  - massachussetts  (SIPB MIT)
+            usa2    -  1 Gbps  - north america  -   michigan      (LUG MTU)
             usa3    -  1 Gbps  - north america  -   virginia      (JMU)
             usa4    -  1 Gbps  - north america  -   new york      (CLARKSON)
             usa5    -  1 Gbps  - north america  -  california     (BERKELEY)
             euro    - 10 Gbps  -   europe       -    italy        (GARR)
             euro2   - 250 Mbps -   europe       -    france       (FROZENBOX)
             euro3   - 20 Gbps  -   europe       -    germany      (RWTH-AACHEN)
-            euro5   -  1 Gbps  -   europe       -    england      (WARWICK)
+            euro4   -  1 Gbps  -   europe       -    england      (WARWICK)
+            euro5   - 10 Gbps  -   europe       -   netherland    (NLUUG)
+            euro6   - 10 Gbps  -   europe       -    poland       (ONET)
             asia    -  1 Gbps  -    asia        -    russia       (YANDEX)
-            asia2   -  1 Gbps  -    asia        -  bangladesh     (DHAKACOM)
-            asia3   - 250 Mbps -    asia        -     china       (YFGAO)
+            asia2   -  1 Gbps  -    asia        -  bangladesh     (AMBERIT)
+            asia3   - 10 Mbps  -    asia        -     china       (YFGAO)
             sam     - 100 Mbps - south america  -    ecuador      (CEDIA)
-            sam2    - 100 Mbps - south america  -    ecuador      (ESPOCH)
-            sam3    - 100 Mbps - south america  -    ecuador      (UTA)
+            sam2    - 100 Mbps - south america  -    ecuador      (UTA)
             meast   -  1 Gpbs  -  middle east   -     iran        (ASIS)
             ocean   -  1 Gbps  -   oceania      - new caledonia   (LAGOON)
             africa  - 100 Mbps -   africa       -    tanzania     (APTUS)
@@ -91,10 +92,10 @@ case $1 in
 		base="http://mirrors.ocf.berkeley.edu/parrot/"
 	;;
 	euro)
-		base="http://eu.archive.parrotsec.org/mirrors/parrot/"
+		base="http://euro.archive.parrotsec.org/mirrors/parrot/"
 	;;
 	euro2)
-		base="http://eu2.archive.parrotsec.org/parrot/"
+		base="http://euro2.archive.parrotsec.org/parrot/"
 	;;
 	euro3)
 		base="http://euro3.archive.parrotsec.org/parrotsec/"
@@ -103,7 +104,10 @@ case $1 in
 		base="http://anorien.csc.warwick.ac.uk/mirrors/parrot/"
 	;;
 	euro5
-		base="http://parrot.dasaweb.net/"
+		base="http://ftp.nluug.nl/os/Linux/distr/parrot/"
+	;;
+	euro6
+		base="http://mirror.onet.pl/pub/mirrors/parrot/"
 	;;
 	asia)
 		base="http://asia.archive.parrotsec.org/mirrors/parrot/"
@@ -112,15 +116,12 @@ case $1 in
 		base="http://asia2.archive.parrotsec.org/parrotsec/"
 	;;
 	asia3)
-		base="http://mirrors.yfgao.net/parrot/"
+		base="http://mirrors.yfgao.com/parrot/"
 	;;
 	sam)
 		base="http://cedia.archive.parrotsec.org/parrot/"
 	;;
 	sam2)
-		base="http://espoch.archive.parrotsec.org/parrot/"
-	;;
-	sam3)
 		base="http://uta.archive.parrotsec.org/parrot/"
 	;;
 	meast)
