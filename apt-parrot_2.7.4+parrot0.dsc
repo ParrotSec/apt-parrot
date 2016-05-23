@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: apt-parrot
 Binary: apt-parrot
 Architecture: all
-Version: 2.7.3+parrot1
+Version: 2.7.4+parrot0
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>, Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Homepage: http://www.parrotsec.org/
@@ -12,8 +12,8 @@ Build-Depends-Indep: pkg-config
 Package-List:
  apt-parrot deb parrot important arch=all
 Checksums-Sha1:
- 101ecf8551bed38301567374aca39c6593d3b833 15724 apt-parrot_2.7.3+parrot1.tar.xz
+ 7e14f68c9b349ff9388537217274fcd8a35faee2 15856 apt-parrot_2.7.4+parrot0.tar.xz
 Checksums-Sha256:
- 1aa0c1eaf8ff3bddad08e01aa8b327ae883c44e482316b592f59d0f41ee4040c 15724 apt-parrot_2.7.3+parrot1.tar.xz
+ f59c3c49a4f1980475e54b4c8c2bdad3e222bb3d5bb7a779c2aa5d18634c0d07 15856 apt-parrot_2.7.4+parrot0.tar.xz
 Files:
- 1734d74740d9ce6a14fd2ab572fe9dee 15724 apt-parrot_2.7.3+parrot1.tar.xz
+ 696e41847bddaf21287ec7cb66b4c0dd 15856 apt-parrot_2.7.4+parrot0.tar.xz
