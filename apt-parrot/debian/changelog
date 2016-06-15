@@ -1,3 +1,9 @@
+apt-parrot (2.7.4+parrot2) testing; urgency=medium
+
+  * Add cloudflare support
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Wed, 15 Jun 2016 17:48:45 +0200
+
 apt-parrot (2.7.4+parrot1) testing; urgency=medium
 
   * Add Esslingen (germany) and 0x (singapore) mirrors

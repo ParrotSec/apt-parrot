@@ -30,6 +30,7 @@ MIRRORS
             meast   -  1 Gpbs  -  middle east   -     iran        (ASIS)
             ocean   -  1 Gbps  -   oceania      - new caledonia   (LAGOON)
             africa  - 100 Mbps -   africa       -    tanzania     (APTUS)
+			cf    - (edge cache) -   Global Delivery Network      (CLOUDFLARE)
 
 BRANCHES
 	current supported branches are
@@ -80,6 +81,9 @@ esac
 case $1 in
 	list)
 		list
+	;;
+	cf)
+		base="http://cloudflare.archive.parrotsec.org/parrot/"
 	;;
 	usa)
 		base="http://mit-usa.archive.parrotsec.org/parrot/"
