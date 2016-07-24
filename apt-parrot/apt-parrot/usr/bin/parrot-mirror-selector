@@ -20,6 +20,7 @@ MIRRORS
             euro7   - 10 Gbps  -   europe       -    sweden       (UMU)
             euro8   - 10 Gbps  -   europe       -    ireland      (HEANET)
             euro9   - 10 Gbps  -   europe       -    germany      (ESSLINGEN)
+            euro10  - 250 Mbps -   europe       -    france       (DASAWEB)
             asia    -  1 Gbps  -    asia        -    russia       (YANDEX)
             asia2   -  1 Gbps  -    asia        -   bangladesh    (AMBERIT)
             asia3   - 10 Gbps  -    asia        -    taiwan       (NCHC)
@@ -70,10 +71,10 @@ esac
 
 areas="main contrib non-free"
 case $3 in
-	free)
+	nonfree)
 		areas="main contrib non-free"
 	;;
-	nonfree)
+	free)
 		areas="main"
 	;;
 esac
@@ -126,6 +127,9 @@ case $1 in
 	;;
 	euro9)
 		base="http://esslingen-euro.archive.parrotsec.org/pub/Mirrors/archive.parrotsec.org/"
+	;;
+	euro10)
+		base="http://dasa1-euro.archive.parrotsec.org/parrot/"
 	;;
 	asia)
 		base="http://yandex-asia.archive.parrotsec.org/mirrors/parrot/"

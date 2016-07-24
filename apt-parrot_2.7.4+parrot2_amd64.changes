@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 15 Jun 2016 17:48:45 +0200
+Source: apt-parrot
+Binary: apt-parrot
+Architecture: source all
+Version: 2.7.4+parrot2
+Distribution: testing
+Urgency: medium
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+Changed-By: Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>
+Description:
+ apt-parrot - Parrot APT repositories
+Changes:
+ apt-parrot (2.7.4+parrot2) testing; urgency=medium
+ .
+   * Add cloudflare support
+Checksums-Sha1:
+ 318130c73139fef0f39fd0e19d80d7a4f4d8d4ca 758 apt-parrot_2.7.4+parrot2.dsc
+ 975dd66ddad933fca7feacaf7f2e0dda9c4ab7ce 14532 apt-parrot_2.7.4+parrot2.tar.xz
+ 13edd6fb55540cf699e76d555a70ce8975c98d0e 15184 apt-parrot_2.7.4+parrot2_all.deb
+Checksums-Sha256:
+ 625c8538e383bf7d2f12857704dd41a39a1b7df06834587d8119aeb48ab87c19 758 apt-parrot_2.7.4+parrot2.dsc
+ ea086f14549d998cc1d9af156cf4d2fbbd833bcb7d7b026a3d891b85eb64155e 14532 apt-parrot_2.7.4+parrot2.tar.xz
+ 3520134515ba7753d9ffaed276eda33f705e9320b377c5e62d13920bdd0df7a9 15184 apt-parrot_2.7.4+parrot2_all.deb
+Files:
+ a8165bdf5fcbe4520cad071c302f6434 758 parrot required apt-parrot_2.7.4+parrot2.dsc
+ e17ea274d27d166f11f8e46f85cd5db3 14532 parrot required apt-parrot_2.7.4+parrot2.tar.xz
+ e5ec5cfdf918f2b796c74d01ffa5cedc 15184 parrot important apt-parrot_2.7.4+parrot2_all.deb
