@@ -1,3 +1,9 @@
+apt-parrot (2.7.5+parrot0) testing; urgency=medium
+
+  * Fix free/nonfree behavior and add euro10 dasaweb mirror
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 04:24:57 +0200
+
 apt-parrot (2.7.4+parrot2) testing; urgency=medium
 
   * Add cloudflare support
