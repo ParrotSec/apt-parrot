@@ -4,7 +4,7 @@ Priority: required
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>,
            Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Build-Depends: debhelper (>= 9)
 Build-Depends-Indep: pkg-config
 Homepage: http://www.parrotsec.org/
@@ -13,7 +13,8 @@ Package: apt-parrot
 Architecture: all
 Priority: important
 Pre-Depends: parrot-archive-keyring, apt
-Recommends: parrot-core, python-apt-common
+Depends: apt-transport-https
+Recommends: parrot-core, python-apt-common, apt-transport-tor
 Includes: parrot-update-manager (<= 1.6)
 Replaces: parrot-update-manager (<= 1.6)
 Description: Parrot APT repositories

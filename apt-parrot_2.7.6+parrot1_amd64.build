@@ -1,8 +1,8 @@
  dpkg-buildpackage -rfakeroot -D -us -uc
 dpkg-buildpackage: info: source package apt-parrot
-dpkg-buildpackage: info: source version 2.7.4+parrot2
+dpkg-buildpackage: info: source version 2.7.6+parrot1
 dpkg-buildpackage: info: source distribution testing
-dpkg-buildpackage: info: source changed by Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>
+dpkg-buildpackage: info: source changed by Lisetta "Sheireen" Ferrero <sheireen@autistiche.org>
  dpkg-source --before-build apt-parrot
 dpkg-buildpackage: info: host architecture amd64
 dpkg-source: warning: unknown information field 'Includes' in input data in package's section of control info file
@@ -14,8 +14,8 @@ dh clean
  dpkg-source -b apt-parrot
 dpkg-source: warning: unknown information field 'Includes' in input data in package's section of control info file
 dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building apt-parrot in apt-parrot_2.7.4+parrot2.tar.xz
-dpkg-source: info: building apt-parrot in apt-parrot_2.7.4+parrot2.dsc
+dpkg-source: info: building apt-parrot in apt-parrot_2.7.6+parrot1.tar.xz
+dpkg-source: info: building apt-parrot in apt-parrot_2.7.6+parrot1.dsc
  debian/rules build
 dh build
    dh_testdir
@@ -53,8 +53,8 @@ dpkg-gencontrol: warning: unknown information field 'Includes' in input data in 
 dpkg-gencontrol: warning: package apt-parrot: unused substitution variable ${misc:Depends}
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'apt-parrot' in '../apt-parrot_2.7.4+parrot2_all.deb'.
- dpkg-genchanges  >../apt-parrot_2.7.4+parrot2_amd64.changes
+dpkg-deb: building package 'apt-parrot' in '../apt-parrot_2.7.6+parrot1_all.deb'.
+ dpkg-genchanges  >../apt-parrot_2.7.6+parrot1_amd64.changes
 dpkg-genchanges: warning: unknown information field 'Includes' in input data in package's section of control info file
 dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build apt-parrot
@@ -65,8 +65,7 @@ W: apt-parrot source: debhelper-but-no-misc-depends apt-parrot
 W: apt-parrot source: maintainer-script-lacks-debhelper-token debian/apt-parrot.postinst
 W: apt-parrot source: maintainer-also-in-uploaders
 W: apt-parrot source: changelog-should-mention-nmu
-W: apt-parrot source: source-nmu-has-incorrect-version-number 2.7.4+parrot2
-W: apt-parrot source: out-of-date-standards-version 3.9.6 (current is 3.9.8)
+W: apt-parrot source: source-nmu-has-incorrect-version-number 2.7.6+parrot1
 E: apt-parrot: copyright-file-contains-full-gpl-license
 E: apt-parrot: copyright-should-refer-to-common-license-file-for-gpl
 W: apt-parrot: no-debconf-templates
