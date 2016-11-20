@@ -3,7 +3,8 @@ all:
 clean:
 
 install:
-	mkdir -p $(DESTDIR)/etc/apt/{preferences.d,sources.list.d}
+	mkdir -p $(DESTDIR)/etc/apt/preferences.d/
+	mkdir -p $(DESTDIR)/etc/apt/sources.list.d
 	mkdir -p $(DESTDIR)/usr/bin
 	
 	cp preferences.d/parrot-pinning $(DESTDIR)/etc/apt/preferences.d/parrot-pinning
