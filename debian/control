@@ -15,7 +15,6 @@ Priority: important
 Pre-Depends: parrot-archive-keyring, apt
 Depends: apt-transport-https
 Recommends: parrot-core, python-apt-common, apt-transport-tor
-Includes: parrot-update-manager (<= 1.6)
 Replaces: parrot-update-manager (<= 1.6)
 Description: Parrot APT repositories
  this package will install an /etc/apt/sources.list file containing
