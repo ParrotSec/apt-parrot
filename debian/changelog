@@ -1,3 +1,10 @@
+apt-parrot (2.8) testing; urgency=medium
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * add new mirrors and change package structure
+
+ -- Lorenzo Palinuro Faletra <palinuro@parrotsec.org>  Sun, 20 Nov 2016 19:39:53 +0100
+
 apt-parrot (2.7.6+parrot1) testing; urgency=medium
 
   [ Lisetta "Sheireen" Ferrero ]
