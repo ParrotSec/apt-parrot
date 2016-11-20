@@ -15,12 +15,12 @@ fi
 
 if ! [ -e "/etc/apt/sources.list.d/parrot.list" ]
 then
-	parrot-mirror-selector euro5 stable nonfree
+	parrot-mirror-selector 12 stable nonfree
 fi
 
 if [ -e "/etc/parrot.testing" ]
 then
-	parrot-mirror-selector euro3 testing nonfree
+	parrot-mirror-selector 8 testing nonfree
 fi
 
 if ! [ -e "/etc/apt/sources.list" ]

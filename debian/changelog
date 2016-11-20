@@ -1,7 +1,10 @@
 apt-parrot (2.7.6+parrot1) testing; urgency=medium
 
+  [ Lisetta "Sheireen" Ferrero ]
   * add https transport
   * add tor transport
+
+  [ Lorenzo "Palinuro" Faletra ]
 
  -- Lisetta "Sheireen" Ferrero <sheireen@autistiche.org>  Sun, 28 Aug 2016 20:56:15 +0400
 

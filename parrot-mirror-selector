@@ -1,0 +1,206 @@
+#!/bin/bash
+
+function list() {
+	echo -e "Parrot Mirror Selector - set up the APT mirror you desire
+
+MIRRORS
+         ID    -     region      -    country      -    speed   -   provider
+
+          1    - North America   -  Massachussetts -   1 Gbps   -   SIPB MIT
+          2    - North America   -   California    -   1 Gbps   -   Berkeley
+          3    - North America   -    Virginia     -   1 Gbps   -   JMU
+          4    - North America   -    New York     -   1 Gbps   -   Clarkson
+
+          5    - South America   -     Ecuador     - 100 Mbps   -   CEDIA
+          6    - South America   -     Ecuador     - 100 Mbps   -   UTA
+          7    - South America   -     Ecuador     - 100 Mbps   -   UEB
+
+          8    -    Europe       -    Germany      -  20 Gbps   -  Halifax RWTH-Aachen
+          9    -    Europe       -     Italy       -  10 Gbps   -  GARR Consortium
+          10   -    Europe       -    Germany      -  10 Gbps   -  Esslingen University
+          11   -    Europe       -   Netherlands   -  10 Gbps   -  Nluug
+          12   -    Europe       -   Netherlands   -  10 Gbps   -  Babylon.network
+          13   -    Europe       -     Sweden      -  10 Gbps   -  Umea University (ACC UMU)
+          14   -    Europe       -    Ireland      -  10 Gbps   -  Heanet
+          15   -    Europe       -     Poland      -  10 Gbps   -  Onet
+          16   -    Europe       -     France      -  10 Gbps   -  Babylon.network
+          17   -    Europe       - United Kingdom  -   1 Gbps   -  Warwick University
+          18   -    Europe       -     Greece      -   1 Gbps   -  University of Crete
+          19   -    Europe       -    Germany      -   1 Gbps   -  Dasaweb eu2
+          20   -    Europe       -     France      - 250 Mbps   -  Dasaweb eu1
+          21   -    Europe       -     France      - 250 Mbps   -  Frozenbox
+
+          22   -     Asia        -    Taiwan       -  10 Gbps   -  NCHC
+          23   -     Asia        -   Singapore     -  10 Gbps   -  0x
+          24   -     Asia        -     China       -   2 Gbps   -  TUNA Tsinghua
+          25   -     Asia        -     China       -   1 Gbps   -  USTC
+          26   -     Asia        -    Russia       -   1 Gbps   -  Yandex
+          27   -     Asia        -   Bangladesh    -   1 Gbps   -  Amberit (Dhakacom)
+
+          28   -   Oceania       -  New Caledonia  -   1 Gbps   -  Lagoon
+
+          29   -  Middle East    -     Iran        -   1 Gbps   -  ASIS
+
+          0   -     Global Distributed CDN        - edge cache - Cloudflare
+
+BRANCHES
+	current supported branches are
+		parrot   - our stable archive
+                stable   - same as parrot
+		testing  - our development tree
+
+AREAS
+	current supported parameters are
+		free     - includes only the main area
+		nonfree  - includes main contrib non-free
+
+USAGE
+ 	 parrot-mirror-selector <ID> [branch] [archive area]
+
+EXAMPLE
+ 	 parrot-mirror-selector 0 stable free
+"
+}
+
+
+branch="parrot"
+case $2 in
+	stable)
+		branch="parrot"
+	;;
+	testing)
+		branch="testing"
+	;;
+	parrot)
+		branch="parrot"
+	;;
+	parrot-testing)
+		branch="testing"
+	;;
+esac
+
+areas="main contrib non-free"
+case $3 in
+	nonfree)
+		areas="main contrib non-free"
+	;;
+	free)
+		areas="main"
+	;;
+esac
+
+case $1 in
+	list)
+		list
+	;;
+	0)
+		base="http://cloudflare.archive.parrotsec.org/parrot/"
+	;;
+	1)
+		base="http://mit-usa.archive.parrotsec.org/parrot/"
+	;;
+	2)
+		base="http://mirrors.ocf.berkeley.edu/parrot/"
+	;;
+	3)
+		base="http://mirror.jmu.edu/pub/parrot/"
+	;;
+	4)
+		base="http://mirror.clarkson.edu/parrot/"
+	;;
+
+	5)
+		base="http://cedia-sam.archive.parrotsec.org/parrot/"
+	;;
+	6)
+		base="http://uta-sam.archive.parrotsec.org/parrot/"
+	;;
+	7)
+		base="http://ueb-sam.archive.parrotsec.org/parrot/"
+	;;
+
+	8)
+		base="http://rwth-aachen-euro.archive.parrotsec.org/parrotsec/"
+	;;
+	9)
+		base="http://garr-euro.archive.parrotsec.org/mirrors/parrot/"
+	;;
+	10)
+		base="https://esslingen-euro.archive.parrotsec.org/pub/Mirrors/archive.parrotsec.org/"
+	;;
+	11)
+		base="https://nl.mirror.babylon.network/parrot"
+	;;
+	12)
+		base="https://nl.mirror.babylon.network/parrot"
+	;;
+	13)
+		base="http://umu-euro.archive.parrotsec.org/mirror/parrotsec.org/parrot/"
+	;;
+	14)
+		base="http://ftp.heanet.ie/pub/parrotsec/"
+	;;
+	15)
+		base="http://onet-euro.archive.parrotsec.org/pub/mirrors/parrot/"
+	;;
+	16)
+		base="https://fr.mirror.babylon.network/parrot"
+	;;
+	17)
+		base="http://warwick-euro.archive.parrotsec.org/mirrors/parrot/"
+	;;
+	18)
+		base="http://ftp.cc.uoc.gr/mirrors/linux/parrot/"
+	;;
+	19)
+		base="http://dasa2-euro.archive.parrotsec.org/parrot"
+	;;
+	20)
+		base="http://dasa1-euro.archive.parrotsec.org/parrot"
+	;;
+	21)
+		base="http://archive.parrotsec.org/parrot"
+	;;
+
+	22)
+		base="http://free.nchc.org.tw/parrot/"
+	;;
+	23)
+		base="http://mirror.0x.sg/parrot/"
+	;;
+	24)
+		base="https://mirrors.tuna.tsinghua.edu.cn/parrot/"
+	;;
+	25)
+		base="http://mirrors.ustc.edu.cn/parrot/"
+	;;
+	26)
+		base="http://yandex-asia.archive.parrotsec.org/mirrors/parrot/"
+	;;
+	27)
+		base="http://amberit-asia.archive.parrotsec.org/parrotsec/"
+	;;
+
+	28)
+		base="http://lagoon-ocean.archive.parrotsec.org/pub/parrot/"
+	;;
+
+	29)
+		base="http://parrot.asis.io/parrot/"
+	;;
+
+	*)
+		list
+	;;
+esac
+
+if [ "$base" != "" ]; then
+	if [ "$branch" != "" ]; then
+		if [ "$areas" != "" ]; then
+			echo "# parrot repository" > /etc/apt/sources.list.d/parrot.list
+			echo "# this file was automatically generated by parrot-mirror-selector" >> /etc/apt/sources.list.d/parrot.list
+			echo "deb $base $branch $areas" >> /etc/apt/sources.list.d/parrot.list
+			echo "#deb-src $base $branch $areas" >> /etc/apt/sources.list.d/parrot.list
+		fi
+	fi
+fi
