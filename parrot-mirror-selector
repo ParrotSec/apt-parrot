@@ -129,7 +129,7 @@ case $1 in
 		base="https://esslingen-euro.archive.parrotsec.org/pub/Mirrors/archive.parrotsec.org/"
 	;;
 	11)
-		base="https://nl.mirror.babylon.network/parrot"
+		base="http://nluug-euro.archive.parrotsec.org/os/Linux/distr/parrot/"
 	;;
 	12)
 		base="https://nl.mirror.babylon.network/parrot"
