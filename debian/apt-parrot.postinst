@@ -25,5 +25,5 @@ fi
 
 if ! [ -e "/etc/apt/sources.list" ]
 then
-	echo /etc/apt/sources.list.parrot > /etc/apt/sources.list
+	cat /etc/apt/sources.list.parrot > /etc/apt/sources.list
 fi
