@@ -1,3 +1,9 @@
+apt-parrot (2.13) testing; urgency=medium
+
+  * Change default mirror to 8 (rwth-aachen)
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 16 Feb 2017 17:01:19 +0100
+
 apt-parrot (2.12) testing; urgency=medium
 
   * Fix postinst script which used echo instead of cat
