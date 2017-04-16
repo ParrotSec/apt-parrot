@@ -1,3 +1,10 @@
+apt-parrot (2.14) testing; urgency=medium
+
+  * Add new mirror in Canada.
+  * Improve postinst script.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 16 Apr 2017 23:46:20 +0200
+
 apt-parrot (2.13) testing; urgency=medium
 
   * Change default mirror to 8 (rwth-aachen)

@@ -6,42 +6,43 @@ function list() {
 MIRRORS
          ID    -     region      -    country      -    speed   -   provider
 
-          1    - North America   -  Massachussetts -   1 Gbps   -   SIPB MIT
-          2    - North America   -   California    -   1 Gbps   -   Berkeley
-          3    - North America   -    Virginia     -   1 Gbps   -   JMU
-          4    - North America   -    New York     -   1 Gbps   -   Clarkson
+          1    - North America   -  Massachussetts -   1 Gbps   -  SIPB MIT
+          2    - North America   -   California    -   1 Gbps   -  Berkeley
+          3    - North America   -    Virginia     -   1 Gbps   -  JMU
+          4    - North America   -    New York     -   1 Gbps   -  Clarkson
+          5    - North America   -     Canada      - 250 Mbps   -  Parrot Project
 
-          5    - South America   -     Ecuador     - 100 Mbps   -   CEDIA
-          6    - South America   -     Ecuador     - 100 Mbps   -   UTA
-          7    - South America   -     Ecuador     - 100 Mbps   -   UEB
+          6    - South America   -     Ecuador     - 100 Mbps   -  CEDIA
+          7    - South America   -     Ecuador     - 100 Mbps   -  UTA
+          8    - South America   -     Ecuador     - 100 Mbps   -  UEB
 
-          8    -    Europe       -    Germany      -  20 Gbps   -  Halifax RWTH-Aachen
-          9    -    Europe       -     Italy       -  10 Gbps   -  GARR Consortium
-          10   -    Europe       -    Germany      -  10 Gbps   -  Esslingen University
-          11   -    Europe       -   Netherlands   -  10 Gbps   -  Nluug
-          12   -    Europe       -   Netherlands   -  10 Gbps   -  Babylon.network
-          13   -    Europe       -     Sweden      -  10 Gbps   -  Umea University (ACC UMU)
-          14   -    Europe       -    Ireland      -  10 Gbps   -  Heanet
-          15   -    Europe       -     Poland      -  10 Gbps   -  Onet
-          16   -    Europe       -     France      -  10 Gbps   -  Babylon.network
-          17   -    Europe       - United Kingdom  -   1 Gbps   -  Warwick University
-          18   -    Europe       -     Greece      -   1 Gbps   -  University of Crete
-          19   -    Europe       -    Germany      -   1 Gbps   -  Dasaweb eu2
-          20   -    Europe       -     France      - 250 Mbps   -  Dasaweb eu1
-          21   -    Europe       -     France      - 250 Mbps   -  Frozenbox
+          9    -    Europe       -    Germany      -  20 Gbps   -  Halifax RWTH-Aachen
+          10   -    Europe       -     Italy       -  10 Gbps   -  GARR Consortium
+          11   -    Europe       -    Germany      -  10 Gbps   -  Esslingen University
+          12   -    Europe       -   Netherlands   -  10 Gbps   -  Nluug
+          13   -    Europe       -   Netherlands   -  10 Gbps   -  Babylon.network
+          14   -    Europe       -     Sweden      -  10 Gbps   -  Umea University (ACC UMU)
+          15   -    Europe       -    Ireland      -  10 Gbps   -  Heanet
+          16   -    Europe       -     Poland      -  10 Gbps   -  Onet
+          17   -    Europe       -     France      -  10 Gbps   -  Babylon.network
+          18   -    Europe       - United Kingdom  -   1 Gbps   -  Warwick University
+          19   -    Europe       -     Greece      -   1 Gbps   -  University of Crete
+          20   -    Europe       -    Germany      -   1 Gbps   -  Dasaweb eu2
+          21   -    Europe       -     France      - 250 Mbps   -  Dasaweb eu1
+          22   -    Europe       -     France      - 250 Mbps   -  Parrot Project
 
-          22   -     Asia        -    Taiwan       -  10 Gbps   -  NCHC
-          23   -     Asia        -   Singapore     -  10 Gbps   -  0x
-          24   -     Asia        -     China       -   2 Gbps   -  TUNA Tsinghua
-          25   -     Asia        -     China       -   1 Gbps   -  USTC
-          26   -     Asia        -    Russia       -   1 Gbps   -  Yandex
-          27   -     Asia        -   Bangladesh    -   1 Gbps   -  Amberit (Dhakacom)
+          23   -     Asia        -    Taiwan       -  10 Gbps   -  NCHC
+          24   -     Asia        -   Singapore     -  10 Gbps   -  0x
+          25   -     Asia        -     China       -   2 Gbps   -  TUNA Tsinghua
+          26   -     Asia        -     China       -   1 Gbps   -  USTC
+          27   -     Asia        -    Russia       -   1 Gbps   -  Yandex
+          28   -     Asia        -   Bangladesh    -   1 Gbps   -  Amberit (Dhakacom)
 
-          28   -   Oceania       -  New Caledonia  -   1 Gbps   -  Lagoon
+          29   -   Oceania       -  New Caledonia  -   1 Gbps   -  Lagoon
 
-          29   -  Middle East    -     Iran        -   1 Gbps   -  ASIS
+          30   -  Middle East    -     Iran        -   1 Gbps   -  ASIS
 
-          0   -     Global Distributed CDN        - edge cache - Cloudflare
+          0    -     Global Distributed CDN        - edge cache - Cloudflare
 
 BRANCHES
 	current supported branches are
