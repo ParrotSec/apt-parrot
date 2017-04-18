@@ -1,3 +1,9 @@
+apt-parrot (2.15) testing; urgency=medium
+
+  * Use the new mirror director by default.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 18 Apr 2017 17:10:56 +0200
+
 apt-parrot (2.14) testing; urgency=medium
 
   * Add new mirror in Canada.

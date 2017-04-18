@@ -11,17 +11,35 @@ fi
 
 
 
+
+#update default mirror
+
+if [[ grep 'http://archive.parrotsec.org' /etc/apt/soursec.list.d/parrot.list ]];then
+	parrot-mirror-selector default
+fi
+
+if [[ grep 'http://cloudflare.archive.parrotsec.org' /etc/apt/soursec.list.d/parrot.list ]];then
+        parrot-mirror-selector default
+fi
+
+if [[ grep 'http://archive.parrotsec.org' /etc/apt/soursec.list.d/parrot.list ]];then
+        parrot-mirror-selector default
+fi
+
+
+
+
 #install parrot repositories if missing
 
 if ! [ -e "/etc/apt/sources.list.d/parrot.list" ]
 then
-	parrot-mirror-selector 9 stable nonfree
+	parrot-mirror-selector default stable nonfree
 	cat /etc/apt/sources.list.parrot > /etc/apt/sources.list
 fi
 
 if [ -e "/etc/parrot.testing" ]
 then
-	parrot-mirror-selector 9 testing nonfree
+	parrot-mirror-selector default testing nonfree
 fi
 
 if ! [ -e "/etc/apt/sources.list" ]

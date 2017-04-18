@@ -94,6 +94,9 @@ case $1 in
 	list)
 		list
 	;;
+	default)
+		base="http://mirrordirector.archive.parrotsec.org/parrot/"
+	;;
 	0)
 		base="http://cloudflare.archive.parrotsec.org/parrot/"
 	;;
