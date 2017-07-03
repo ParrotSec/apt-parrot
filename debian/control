@@ -4,7 +4,7 @@ Priority: required
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
 Standards-Version: 3.9.8
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 10)
 Build-Depends-Indep: pkg-config
 Homepage: https://www.parrotsec.org/
 

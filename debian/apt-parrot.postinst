@@ -14,15 +14,11 @@ fi
 
 #update default mirror
 
-if [ test `grep 'http://archive.parrotsec.org' /etc/apt/sources.list.d/parrot.list` ];then
-	parrot-mirror-selector default
-fi
-
-if [ test `grep 'http://cloudflare.archive.parrotsec.org' /etc/apt/sources.list.d/parrot.list` ];then
+if [ test `grep 'cloudflare.archive.parrotsec.org' /etc/apt/sources.list.d/parrot.list` ];then
         parrot-mirror-selector default
 fi
 
-if [ test `grep 'http://archive.parrotsec.org' /etc/apt/sources.list.d/parrot.list` ];then
+if [ test `grep 'mirrordirector.archive.parrotsec.org' /etc/apt/sources.list.d/parrot.list` ];then
         parrot-mirror-selector default
 fi
 

@@ -1,3 +1,11 @@
+apt-parrot (2.16) testing; urgency=medium
+
+  * Upgrade to debhelper 10
+  * Remove mirror selector in favour of the mirror redirector
+  * Update mirror director addresses
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 04 Jul 2017 00:57:48 +0200
+
 apt-parrot (2.15.1) testing; urgency=medium
 
   * Apply minor fixes to postinst
