@@ -1,3 +1,9 @@
+apt-parrot (2.16+parrot1) testing; urgency=medium
+
+  * Move apt-transport-tor from Recommends to Suggests.
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Fri, 25 Aug 2017 00:11:47 +0200
+
 apt-parrot (2.16) testing; urgency=medium
 
   * Upgrade to debhelper 10

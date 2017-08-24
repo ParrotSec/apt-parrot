@@ -3,7 +3,7 @@ Section: parrot
 Priority: required
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
-Standards-Version: 3.9.8
+Standards-Version: 4.1.0
 Build-Depends: debhelper (>= 10)
 Build-Depends-Indep: pkg-config
 Homepage: https://www.parrotsec.org/
@@ -13,7 +13,8 @@ Architecture: all
 Priority: important
 Pre-Depends: parrot-archive-keyring, apt
 Depends: apt-transport-https
-Recommends: parrot-core, python-apt-common, apt-transport-tor
+Recommends: parrot-core, python-apt-common
+Suggests: apt-transport-tor
 Replaces: parrot-update-manager (<= 1.6)
 Description: Parrot APT repositories
  this package will install an /etc/apt/sources.list file containing
