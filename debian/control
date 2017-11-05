@@ -12,7 +12,6 @@ Package: apt-parrot
 Architecture: all
 Priority: important
 Pre-Depends: parrot-archive-keyring, apt
-Depends: apt-transport-https
 Recommends: parrot-core, python-apt-common
 Suggests: apt-transport-tor
 Replaces: parrot-update-manager (<= 1.6)

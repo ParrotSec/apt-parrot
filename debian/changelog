@@ -1,3 +1,9 @@
+apt-parrot (2.16+parrot2) testing; urgency=medium
+
+  * apt 1.6 has native https support, dropping apt-transport-https dependency.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 05 Nov 2017 23:34:48 +0100
+
 apt-parrot (2.16+parrot1) testing; urgency=medium
 
   * Move apt-transport-tor from Recommends to Suggests.
