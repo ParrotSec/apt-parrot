@@ -1,0 +1,26 @@
+#!/bin/bash
+
+function upgrade {
+	echo -e "
+apt upgrade is unsafe on rolling release distributions.
+
+using apt full-upgrade instead
+
+use apt upgrade --force to override
+
+
+"
+	/usr/bin/apt full-upgrade
+}
+
+case $1 in
+	upgrade)
+		upgrade
+		case $2 in --force)
+			/usr/bin/apt upgrade;;
+		esac
+		exit
+	;;
+esac
+
+/usr/bin/apt $@
