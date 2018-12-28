@@ -1,3 +1,9 @@
+apt-parrot (2.18+parrot1) testing; urgency=medium
+
+  * Include parrot-upgrade scripts from parrot-updater package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 28 Dec 2018 16:21:55 +0100
+
 apt-parrot (2.17+parrot2) testing; urgency=medium
 
   * Disable apt-get upgrade.

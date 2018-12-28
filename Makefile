@@ -11,6 +11,11 @@ install:
 	cp preferences.d/parrot-pinning $(DESTDIR)/etc/apt/preferences.d/parrot-pinning
 	cp sources.list.parrot $(DESTDIR)/etc/apt/sources.list.parrot
 	cp parrot-mirror-selector $(DESTDIR)/usr/bin/parrot-mirror-selector
+	cp parrot-upgrade $(DESTDIR)/usr/bin/parrot-upgrade
+	cp parrot-upgrade $(DESTDIR)/usr/bin/update
+	cp parrot-upgrade $(DESTDIR)/usr/bin/upgrade
+	cp parrot-upgrade $(DESTDIR)/usr/bin/dist-upgrade
+	cp parrot-upgrade $(DESTDIR)/usr/bin/full-upgrade
 	cp apt $(DESTDIR)/usr/local/bin/apt
 	cp apt-get $(DESTDIR)/usr/local/bin/apt-get
 
@@ -22,6 +27,13 @@ install:
 
 	chown root:root $(DESTDIR)/usr/bin/parrot-mirror-selector
 	chmod 755 $(DESTDIR)/usr/bin/parrot-mirror-selector
+
+	chown root:root $(DESTDIR)/usr/bin/parrot-upgrade
+	chmod 755 $(DESTDIR)/usr/bin/parrot-upgrade
+	chmod 755 $(DESTDIR)/usr/bin/dist-upgrade
+	chmod 755 $(DESTDIR)/usr/bin/full-upgrade
+	chmod 755 $(DESTDIR)/usr/bin/upgrade
+	chmod 755 $(DESTDIR)/usr/bin/update
 
 	chown root:root $(DESTDIR)/usr/local/bin/apt
 	chmod 755 $(DESTDIR)/usr/local/bin/apt
