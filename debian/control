@@ -15,7 +15,6 @@ Pre-Depends: parrot-archive-keyring, apt
 Recommends: parrot-core, python-apt-common
 Suggests: apt-transport-tor, parrot-updater
 Replaces: parrot-update-manager (<= 1.6), parrot-updater (<= 0.4.2)
-Breaks: parrot-updater (<= 0.4.2)
 Description: Parrot APT repositories
  this package will install an /etc/apt/sources.list file containing
  all the repositories provided by FrozenBox Dev Team for Parrot OS
