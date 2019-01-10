@@ -1,3 +1,10 @@
+apt-parrot (2.19+parrot1) testing; urgency=medium
+
+  * Improve apt wrapper.
+  * Add zypper wrapper and zypper-like parameters.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 10 Jan 2019 03:00:59 +0100
+
 apt-parrot (2.18+parrot2) testing; urgency=medium
 
   * Fix conflicts with parrot-updater.

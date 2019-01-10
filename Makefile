@@ -17,7 +17,8 @@ install:
 	cp parrot-upgrade $(DESTDIR)/usr/bin/dist-upgrade
 	cp parrot-upgrade $(DESTDIR)/usr/bin/full-upgrade
 	cp apt $(DESTDIR)/usr/local/bin/apt
-	cp apt-get $(DESTDIR)/usr/local/bin/apt-get
+	cp apt $(DESTDIR)/usr/local/bin/apt-get
+	cp apt $(DESTDIR)/usr/bin/zypper
 
 	chown root:root $(DESTDIR)/etc/apt/sources.list.parrot
 	chmod 644 $(DESTDIR)/etc/apt/sources.list.parrot
@@ -40,3 +41,6 @@ install:
 
 	chown root:root $(DESTDIR)/usr/local/bin/apt-get
 	chmod 755 $(DESTDIR)/usr/local/bin/apt-get
+
+	chown root:root $(DESTDIR)/usr/bin/zypper
+	chmod 755 $(DESTDIR)/usr/bin/zypper

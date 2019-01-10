@@ -21,6 +21,38 @@ case $1 in
 		esac
 		exit
 	;;
+	dup)
+		/usr/bin/apt dist-upgrade
+		exit
+	;;
+	refresh)
+		/usr/bin/apt update
+		exit
+	;;
+	in)
+		/usr/bin/apt install ${@:2}
+		exit
+	;;
+	rm)
+		/usr/bin/apt remove ${@:2}
+		exit
+	;;
+	list-updates|lu)
+		/usr/bin/apt list --upgradable
+		exit
+	;;
+	se)
+		/usr/bin/apt search ${@:2}
+		exit
+	;;
+	po)
+		/usr/bin/apt policy ${@:2}
+		exit
+	;;
+	sh)
+		/usr/bin/apt show ${@:2}
+		exit
+	;;
 esac
 
 /usr/bin/apt $@
