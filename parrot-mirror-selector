@@ -27,13 +27,13 @@ and put the following content in /etc/apt/sources.list.d/parrot.list
 branch="parrot"
 case $2 in
 	stable)
-		branch="parrot"
+		branch="stable"
 	;;
 	testing)
 		branch="testing"
 	;;
 	parrot)
-		branch="parrot"
+		branch="stable"
 	;;
 	parrot-testing)
 		branch="testing"
