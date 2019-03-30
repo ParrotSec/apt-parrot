@@ -1,3 +1,9 @@
+apt-parrot (2.20+parrot1) testing; urgency=medium
+
+  * Make update noninteractive.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 30 Mar 2019 02:58:54 +0100
+
 apt-parrot (2.19+parrot1) testing; urgency=medium
 
   * Improve apt wrapper.
