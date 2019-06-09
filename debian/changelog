@@ -1,3 +1,18 @@
+apt-parrot (2.22+parrot1) testing; urgency=medium
+
+  * Update package.
+  * Add remediations to clean and remove external repos and gpg keys for better safety.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 09 Jun 2019 03:44:42 +0200
+
+apt-parrot (2.21+parrot1) testing; urgency=medium
+
+  * Pre-depend on apt >= 1.8.0+parrot1 which accepts https->http redirections.
+  * Use https by default.
+  * Use mirror.parrotsec.org instead of archive.parrotsec.org as alternative server.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 03 Apr 2019 03:29:53 +0200
+
 apt-parrot (2.20+parrot1) testing; urgency=medium
 
   * Make update noninteractive.

@@ -13,3 +13,7 @@ Pin-Priority: 50
 Package: *
 Pin: release o=Ubuntu
 Pin-Priority: 50
+
+Package: *
+Pin: release o=vscode stable
+Pin-Priority: 50

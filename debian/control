@@ -3,7 +3,7 @@ Section: parrot
 Priority: required
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
-Standards-Version: 4.1.0
+Standards-Version: 4.3.0
 Build-Depends: debhelper (>= 10)
 Build-Depends-Indep: pkg-config
 Homepage: https://www.parrotsec.org/
@@ -11,7 +11,7 @@ Homepage: https://www.parrotsec.org/
 Package: apt-parrot
 Architecture: all
 Priority: important
-Pre-Depends: parrot-archive-keyring, apt
+Pre-Depends: parrot-archive-keyring, apt (>= 1.8.0+parrot1)
 Recommends: parrot-core, python-apt-common
 Suggests: apt-transport-tor, parrot-updater
 Replaces: parrot-update-manager (<= 1.6), parrot-updater (<= 0.4.2)

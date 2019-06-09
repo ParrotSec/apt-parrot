@@ -12,13 +12,13 @@ Nowadays the Parrot images come with a pre-installed mirror redirector
 that detects the location of the user (via geoip) and redirects its
 requests to the nearest server available.
 
-If you need to change your mirror repository, visit https://docs.parrotsec.org/doku.php/mirrors-list
+If you need to change your mirror repository, visit https://parrotsec.org/docs/mirror-list
 and manually choose the best mirror for you.
 
 Otherwise leave /etc/apt/sources.list empty
 and put the following content in /etc/apt/sources.list.d/parrot.list
 
-	deb http://deb.parrotsec.org/parrot stable main contrib non-free
+	deb https://deb.parrotsec.org/parrot stable main contrib non-free
 
 "
 }
@@ -55,10 +55,10 @@ case $1 in
 		list
 	;;
 	default)
-		base="http://deb.parrotsec.org/parrot/"
+		base="https://deb.parrotsec.org/parrot/"
 	;;
 	0)
-		base="http://archive.parrotsec.org/parrot/"
+		base="https://mirror.parrotsec.org/parrot/"
 	;;
 	*)
 		list

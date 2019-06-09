@@ -16,8 +16,8 @@ use apt-get upgrade --force to override
 case $1 in
 	upgrade)
 		upgrade
-		case $2 in --force)
-			/usr/bin/apt-get upgrade;;
+        case $2 in --force)
+   			/usr/bin/apt-get upgrade;;
 		esac
 		exit
 	;;

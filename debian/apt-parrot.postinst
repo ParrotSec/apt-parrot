@@ -10,9 +10,14 @@ then
 fi
 
 
+# Clean old (potentially dangerous) apt configs
 
+cd /etc/apt/trusted.gpg.d/
+rm $(ls /etc/apt/trusted.gpg.d/ | grep -v parrot)
+cd /etc/apt/sources.list.d/ 
+rm $(ls /etc/apt/sources.list.d/ | grep -v parrot)
 
-#update default mirror
+# Update default mirror
 
 if [ test `grep 'cloudflare.archive.parrotsec.org' /etc/apt/sources.list.d/parrot.list` ];then
         parrot-mirror-selector default
@@ -21,8 +26,6 @@ fi
 if [ test `grep 'mirrordirector.archive.parrotsec.org' /etc/apt/sources.list.d/parrot.list` ];then
         parrot-mirror-selector default
 fi
-
-
 
 
 #install parrot repositories if missing
@@ -42,3 +45,4 @@ if ! [ -e "/etc/apt/sources.list" ]
 then
 	cat /etc/apt/sources.list.parrot > /etc/apt/sources.list
 fi
+
