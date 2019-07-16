@@ -1,3 +1,15 @@
+apt-parrot (3.0+parrot1) testing; urgency=medium
+
+  * Prepare packge for new Parrot 5.x repo layout (lts/rolling)
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 16 Jul 2019 17:18:34 +0200
+
+apt-parrot (2.22+parrot2) testing; urgency=medium
+
+  * Fix bash error in postinst script.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 09 Jun 2019 14:48:34 +0200
+
 apt-parrot (2.22+parrot1) testing; urgency=medium
 
   * Update package.

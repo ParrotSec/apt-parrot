@@ -9,22 +9,27 @@ then
 	update-apt-xapian-index -vf
 fi
 
+# Determine distro version
 
-# Clean old (potentially dangerous) apt configs
 
-cd /etc/apt/trusted.gpg.d/
-rm $(ls /etc/apt/trusted.gpg.d/ | grep -v parrot)
-cd /etc/apt/sources.list.d/ 
-rm $(ls /etc/apt/sources.list.d/ | grep -v parrot)
+if [ -e /lib/systemd/systemd ];then
+        DISTRO=rolling
+fi
+
+if ! [ -e /lib/systemd/systemd ];then
+        DISTRO=lts
+fi
+
+
 
 # Update default mirror
 
-if [ test `grep 'cloudflare.archive.parrotsec.org' /etc/apt/sources.list.d/parrot.list` ];then
-        parrot-mirror-selector default
+if [ test `grep ' stable main' /etc/apt/sources.list.d/parrot.list` ];then
+        parrot-mirror-selector default $DISTRO
 fi
 
-if [ test `grep 'mirrordirector.archive.parrotsec.org' /etc/apt/sources.list.d/parrot.list` ];then
-        parrot-mirror-selector default
+if [ test `grep ' parrot main' /etc/apt/sources.list.d/parrot.list` ];then
+        parrot-mirror-selector default $DISTRO
 fi
 
 
@@ -32,7 +37,7 @@ fi
 
 if ! [ -e "/etc/apt/sources.list.d/parrot.list" ]
 then
-	parrot-mirror-selector default stable nonfree
+	parrot-mirror-selector default $DISTRO nonfree
 	cat /etc/apt/sources.list.parrot > /etc/apt/sources.list
 fi
 
