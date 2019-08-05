@@ -1,3 +1,9 @@
+apt-parrot (3.0+parrot2) rolling; urgency=medium
+
+  * Use new Parrot archive domain
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 05 Aug 2019 14:09:38 +0200
+
 apt-parrot (3.0+parrot1) testing; urgency=medium
 
   * Prepare packge for new Parrot 5.x repo layout (lts/rolling)

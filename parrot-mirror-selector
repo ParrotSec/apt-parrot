@@ -49,10 +49,10 @@ case $1 in
 		list
 	;;
 	default)
-		base="https://deb.parrotsec.org/parrot/"
+		base="https://deb.parrot.sh/parrot/"
 	;;
 	0)
-		base="https://mirror.parrotsec.org/parrot/"
+		base="https://mirror.parrot.sh/parrot/"
 	;;
 	*)
 		list
