@@ -1,3 +1,9 @@
+apt-parrot (3.1+parrot4) rolling-testing; urgency=medium
+
+  * Fix typo.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Aug 2020 13:44:35 +0200
+
 apt-parrot (3.1+parrot3) rolling-testing; urgency=medium
 
   * Use better detection for ova images.

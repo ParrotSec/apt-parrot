@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -x /usr/bin/snapp ]; then
+if [ -x /usr/bin/snap ]; then
 	/usr/bin/snap $@
 else
 	echo "SNAP is not currently installed."
