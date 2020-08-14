@@ -10,6 +10,7 @@ use apt upgrade --force to override
 
 
 "
+	/usr/bin/apt update
 	/usr/bin/apt full-upgrade
 }
 
@@ -21,8 +22,8 @@ case $1 in
 		esac
 		exit
 	;;
-	dup)
-		/usr/bin/apt dist-upgrade
+	dup|up|u)
+		upgrade
 		exit
 	;;
 	refresh)
@@ -53,6 +54,7 @@ case $1 in
 		/usr/bin/apt show ${@:2}
 		exit
 	;;
+	
 esac
 
 /usr/bin/apt $@

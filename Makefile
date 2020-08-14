@@ -19,6 +19,7 @@ install:
 	cp apt $(DESTDIR)/usr/local/bin/apt
 	cp apt $(DESTDIR)/usr/local/bin/apt-get
 	cp apt $(DESTDIR)/usr/bin/zypper
+	cp snap $(DESTDIR)/usr/local/bin/snap
 
 	chown root:root $(DESTDIR)/etc/apt/sources.list.parrot
 	chmod 644 $(DESTDIR)/etc/apt/sources.list.parrot
@@ -37,10 +38,11 @@ install:
 	chmod 755 $(DESTDIR)/usr/bin/update
 
 	chown root:root $(DESTDIR)/usr/local/bin/apt
-	chmod 755 $(DESTDIR)/usr/local/bin/apt
-
 	chown root:root $(DESTDIR)/usr/local/bin/apt-get
-	chmod 755 $(DESTDIR)/usr/local/bin/apt-get
-
 	chown root:root $(DESTDIR)/usr/bin/zypper
+	chown root:root $(DESTDIR)/usr/local/bin/snap
+
+	chmod 755 $(DESTDIR)/usr/local/bin/apt
+	chmod 755 $(DESTDIR)/usr/local/bin/apt-get
 	chmod 755 $(DESTDIR)/usr/bin/zypper
+	chmod 755 $(DESTDIR)/usr/local/bin/snap

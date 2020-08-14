@@ -1,3 +1,9 @@
+apt-parrot (3.1+parrot1) rolling-testing; urgency=medium
+
+  * Add snap wrapper
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Aug 2020 12:29:40 +0200
+
 apt-parrot (3.0+parrot2) rolling; urgency=medium
 
   * Use new Parrot archive domain
