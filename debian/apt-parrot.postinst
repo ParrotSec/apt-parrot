@@ -22,8 +22,7 @@ fi
 
 
 # Update ova images
-if [ -e "/home/user/Desktop/password.txt" ]
-then
+if [ $(hostname) == "parrot-virtual" ];then
 	parrot-mirror-selector direct $DISTRO nonfree
 	exit
 fi
@@ -41,7 +40,6 @@ if [ test `grep ' parrot main' /etc/apt/sources.list.d/parrot.list` ];then
 fi
 
 if [ test `grep ' rolling-testing main' /etc/apt/sources.list.d/parrot.list` ];then
-        parrot-mirror-selector default testing nonfree
         exit
 fi
 
