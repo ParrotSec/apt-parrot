@@ -48,11 +48,14 @@ case $1 in
 	list)
 		list
 	;;
-	default)
+	default|director)
 		base="https://deb.parrot.sh/parrot/"
 	;;
 	0)
 		base="https://mirror.parrot.sh/parrot/"
+	;;
+	direct)
+		base="https://mirror.parrot.sh/mirrors/parrot/"
 	;;
 	*)
 		list

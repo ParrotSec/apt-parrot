@@ -1,3 +1,10 @@
+apt-parrot (3.1+parrot2) rolling-testing; urgency=medium
+
+  * Preserve rolling-testing repos.
+  * Add special condition for ova images.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Aug 2020 13:30:10 +0200
+
 apt-parrot (3.1+parrot1) rolling-testing; urgency=medium
 
   * Add snap wrapper

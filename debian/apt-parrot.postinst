@@ -21,15 +21,28 @@ if ! [ -e /lib/systemd/systemd ];then
 fi
 
 
+# Update ova images
+if [ -e "/home/user/Desktop/password.txt" ]
+then
+	parrot-mirror-selector direct $DISTRO nonfree
+	exit
+fi
 
 # Update default mirror
 
 if [ test `grep ' stable main' /etc/apt/sources.list.d/parrot.list` ];then
         parrot-mirror-selector default $DISTRO
+        exit
 fi
 
 if [ test `grep ' parrot main' /etc/apt/sources.list.d/parrot.list` ];then
         parrot-mirror-selector default $DISTRO
+        exit
+fi
+
+if [ test `grep ' rolling-testing main' /etc/apt/sources.list.d/parrot.list` ];then
+        parrot-mirror-selector default testing nonfree
+        exit
 fi
 
 
